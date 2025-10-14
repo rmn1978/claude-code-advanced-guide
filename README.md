@@ -42,13 +42,13 @@
 
 ## 📋 Tabla de Contenidos
 
-- [Introducción](#introducción)
-- [Configuración Rápida](#configuración-rápida)
-- [Estructura del Repositorio](#estructura-del-repositorio)
-- [Guías Detalladas](#guías-detalladas)
-- [Ejemplos Prácticos](#ejemplos-prácticos)
-- [Casos de Uso Avanzados](#casos-de-uso-avanzados)
-- [Recursos Adicionales](#recursos-adicionales)
+- [Introducción](#-introducción)
+- [Configuración Rápida](#-configuración-rápida)
+- [Estructura del Repositorio](#-estructura-del-repositorio)
+- [Guías Detalladas](#-guías-detalladas)
+- [Ejemplos Prácticos](#-ejemplos-prácticos)
+- [Casos de Uso Avanzados](#-casos-de-uso-avanzados)
+- [Recursos Adicionales](#-recursos-adicionales)
 
 ## 🎯 Introducción
 
