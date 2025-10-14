@@ -7,22 +7,22 @@ Colección de proyectos completos que demuestran cómo usar Claude Code con dife
 ### Por Nivel de Complejidad
 
 #### 🟢 Básico (1-2 horas para completar)
-1. [Todo API - FastAPI](#1-todo-api-fastapi) - API REST simple con CRUD
-2. [Blog Static - Next.js](#2-blog-static-nextjs) - Blog estático con SSG
-3. [Landing Page - Nuxt](#3-landing-page-nuxt) - Landing page con formularios
+1. [Todo API - FastAPI](#1-todo-api---fastapi) - API REST simple con CRUD
+2. [Blog Static - Next.js](#2-blog-static---nextjs) - Blog estático con SSG
+3. [Landing Page - Nuxt](#3-landing-page---nuxt) - Landing page con formularios
 
 #### 🟡 Intermedio (3-5 horas para completar)
 4. [E-commerce Product Catalog](#4-e-commerce-product-catalog) - Next.js + FastAPI
 5. [SaaS Dashboard](#5-saas-dashboard) - Nuxt + Django
 6. [API Gateway](#6-api-gateway) - Express + Microservices
-7. [Real-Time Chat](#7-real-time-chat) - Next.js + Socket.io + Redis 💬
+7. [Real-Time Chat](#7-real-time-chat-) - Next.js + Socket.io + Redis 💬
 
 #### 🔴 Avanzado (6-8 horas para completar)
-8. [Landing Page Builder](#8-landing-page-builder) - No-Code Visual Editor 🎨
-9. [AI Code Reviewer](#9-ai-code-reviewer) - GitHub PR Analysis with Claude AI 🤖
-10. [Video Streaming Platform](#10-video-streaming-platform) - Netflix-scale Video Platform 🎬
-11. [Web3 NFT Marketplace](#11-web3-nft-marketplace) - Blockchain NFT Trading Platform ⛓️
-12. [Social Media Platform](#12-social-media-platform) - Twitter/X Clone with ML Feed 🐦
+8. [Landing Page Builder](#8-landing-page-builder-) - No-Code Visual Editor 🎨
+9. [AI Code Reviewer](#9-ai-code-reviewer-) - GitHub PR Analysis with Claude AI 🤖
+10. [Video Streaming Platform](#10-video-streaming-platform-) - Netflix-scale Video Platform 🎬
+11. [Web3 NFT Marketplace](#11-web3-nft-marketplace-️) - Blockchain NFT Trading Platform ⛓️
+12. [Social Media Platform](#12-social-media-platform-) - Twitter/X Clone with ML Feed 🐦
 
 #### 🟣 Enterprise (1-2+ días)
 13. [Healthcare AI Platform](#13-healthcare-ai-platform) - Multi-stack con especialización médica
