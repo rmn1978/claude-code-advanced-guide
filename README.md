@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude-Code-blue.svg)](https://claude.ai/code)
 [![VS Code](https://img.shields.io/badge/VS%20Code-Extension-blue.svg)](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code)
-[![Version](https://img.shields.io/badge/version-0.2-green.svg)](./WHATS_NEW.md)
+[![Version](https://img.shields.io/badge/version-0.3-green.svg)](./WHATS_NEW.md)
 
 ## 🌟 Lo Nuevo en v0.3 - THE ULTIMATE UPDATE 🔥
 
@@ -261,7 +261,7 @@ Incluye:
 - Risk assessment
 - Integración con APIs financieras
 
-[Ver ejemplo completo →](examples/finance-analyzer/)
+[🚧 Próximamente]
 
 ### Tutor Educativo Personalizado
 
@@ -276,7 +276,7 @@ Incluye:
 - Seguimiento de progreso
 - Feedback personalizado
 
-[Ver ejemplo completo →](examples/education-tutor/)
+[🚧 Próximamente]
 
 ### Revisor de Código Avanzado
 
@@ -291,7 +291,7 @@ Incluye:
 - Sugerencias de performance
 - Compliance checks
 
-[Ver ejemplo completo →](examples/code-reviewer/)
+[Ver AI Code Reviewer →](examples/ai-code-reviewer/)
 
 ### Generador de APIs RESTful
 
@@ -306,7 +306,7 @@ Incluye:
 - Generación de docs
 - Tests automáticos
 
-[Ver ejemplo completo →](examples/api-generator/)
+[Ver API Gateway →](examples/api-gateway-express/)
 
 ### Asistente DevOps
 
@@ -321,7 +321,7 @@ Incluye:
 - Monitoreo y alertas
 - Automation scripts
 
-[Ver ejemplo completo →](examples/devops-assistant/)
+[🚧 Próximamente - Ver agente Deployment Specialist →](agents/workflow/deployment-specialist.md)
 
 ## 🎯 Casos de Uso Avanzados
 
@@ -335,7 +335,7 @@ Arquitectura multi-agente para construir un CRM desde cero:
 - **Security Auditor**: Análisis de vulnerabilidades
 - **DevOps Engineer**: Deployment y CI/CD
 
-[Ver workflow completo →](examples/crm-development/)
+[🚧 Próximamente]
 
 ### 2. Sistema de Machine Learning Pipeline
 
@@ -347,7 +347,7 @@ Agentes especializados para ML:
 - **Model Validator**: Validación y testing
 - **Deployment Manager**: MLOps
 
-[Ver workflow completo →](examples/ml-pipeline/)
+[🚧 Próximamente]
 
 ### 3. Migración Legacy to Modern Stack
 
@@ -359,7 +359,7 @@ Estrategia de migración asistida por IA:
 - **Test Validator**: Verificación de comportamiento
 - **Documentation Writer**: Actualización de docs
 
-[Ver workflow completo →](examples/legacy-migration/)
+[🚧 Próximamente]
 
 ## 🛠️ Scripts de Utilidad
 
@@ -367,7 +367,7 @@ Estrategia de migración asistida por IA:
 
 ```bash
 # Setup completo de Claude Code en tu proyecto
-curl -sSL https://raw.githubusercontent.com/tu-usuario/claude-code-advanced-guide/main/scripts/setup.sh | bash
+curl -sSL https://raw.githubusercontent.com/rmn1978/claude-code-advanced-guide/main/scripts/setup.sh | bash
 ```
 
 ### Generador de Agentes
@@ -450,9 +450,10 @@ Este proyecto está bajo la licencia MIT - ver [LICENSE](LICENSE) para más deta
 
 ## 📞 Contacto
 
-- Issues: [GitHub Issues](https://github.com/tu-usuario/claude-code-advanced-guide/issues)
-- Discussions: [GitHub Discussions](https://github.com/tu-usuario/claude-code-advanced-guide/discussions)
-- Twitter: [@learntouseai](https://twitter.com/learntouseai)
+- **Issues**: [GitHub Issues](https://github.com/rmn1978/claude-code-advanced-guide/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/rmn1978/claude-code-advanced-guide/discussions)
+- **GitHub**: [@rmn1978](https://github.com/rmn1978)
+- **Twitter**: [@learntouseai](https://twitter.com/learntouseai)
 
 ---
 
