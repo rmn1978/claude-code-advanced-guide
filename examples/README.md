@@ -25,8 +25,9 @@ Colección de proyectos completos que demuestran cómo usar Claude Code con dife
 12. [Social Media Platform](#12-social-media-platform-) - Twitter/X Clone with ML Feed 🐦
 
 #### 🟣 Enterprise (1-2+ días)
-13. [Healthcare AI Platform](#13-healthcare-ai-platform) - Multi-stack con especialización médica
-14. [Multi-tenant SaaS](#14-multi-tenant-saas) - Full-stack enterprise
+13. [ML Training Pipeline](#13-ml-training-pipeline-) - Production MLOps with MLflow + Optuna 🤖
+14. [Healthcare AI Platform](#14-healthcare-ai-platform) - Multi-stack con especialización médica
+15. [Multi-tenant SaaS](#15-multi-tenant-saas) - Full-stack enterprise
 
 ---
 
@@ -607,7 +608,96 @@ model Follow {
 
 ---
 
-### 13. Healthcare AI Platform
+### 13. ML Training Pipeline 🤖
+
+**Stack**: Python 3.11 + scikit-learn + MLflow + Optuna + FastAPI + PostgreSQL
+
+**Descripción**: Pipeline completo de Machine Learning para predicción de customer churn, incluyendo experiment tracking, hyperparameter tuning, model registry, deployment, y monitoring.
+
+**Features**:
+- ✅ Data preprocessing y feature engineering
+- ✅ Experiment tracking con MLflow
+- ✅ Hyperparameter optimization con Optuna
+- ✅ Model versioning y registry
+- ✅ FastAPI inference endpoint
+- ✅ Data drift detection con Evidently
+- ✅ Automated retraining pipeline
+- ✅ A/B testing framework
+- ✅ Prometheus metrics export
+- ✅ Docker + Kubernetes deployment
+
+**Algoritmos incluidos**:
+- Logistic Regression (baseline)
+- Random Forest (production)
+- Gradient Boosting (high performance)
+
+**Agente recomendado**: `ml-engineer` (🚧 próximamente)
+
+**Tiempo estimado**: 8-10 horas
+
+**Directorio**: [`ml-training-pipeline/`](./ml-training-pipeline/)
+
+**Arquitectura**:
+```
+Raw Data → Preprocessing → Feature Engineering
+    ↓
+Train/Val/Test Split
+    ↓
+Training Loop (MLflow logging)
+    ↓
+Optuna HPO → Best Model → Model Registry
+    ↓
+FastAPI Deployment
+    ↓
+Monitoring & Drift Detection
+    ↓
+Automated Retraining
+```
+
+**Comandos rápidos**:
+```bash
+# Setup
+docker-compose up -d  # PostgreSQL + MLflow
+
+# Train model
+python src/models/train.py
+
+# Hyperparameter tuning
+python src/models/tune.py --n-trials 50
+
+# Start API
+uvicorn src.api.main:app --reload
+
+# Predict
+curl -X POST http://localhost:8000/predict \
+  -H "Content-Type: application/json" \
+  -d '{"customer_id": "C123", "total_purchases": 15, ...}'
+```
+
+**MLflow UI**:
+```bash
+# Open MLflow
+open http://localhost:5000
+
+# Features:
+- Compare experiments
+- Visualize metrics
+- Model registry
+- Artifact viewer
+```
+
+**Valor comercial**: $15k-$80k MRR (como plataforma MLOps)
+
+**Use cases**:
+- Customer churn prediction
+- Credit risk scoring
+- Fraud detection
+- Demand forecasting
+- Product recommendations
+
+---
+
+### 14. Healthcare AI Platform
 
 **Stack**: Multi-stack con especialización médica
 
@@ -658,7 +748,7 @@ model Follow {
 
 ---
 
-### 14. Multi-tenant SaaS
+### 15. Multi-tenant SaaS
 
 **Stack**: Next.js + Django + PostgreSQL + Redis + S3
 
