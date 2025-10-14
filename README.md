@@ -86,6 +86,20 @@ Este repositorio es un **toolkit profesional completo** que transforma cómo con
 
 **Reducción en tiempo de desarrollo**: 40-70%
 
+## 🎓 ¿Eres Principiante? Empieza Aquí
+
+**NUEVO**: Contenido especial para beginners
+
+### 🚀 Quick Start (15 minutos)
+1. **[Tutorial de 15 Minutos](./TUTORIAL-15MIN.md)** ⭐ Crea tu primera app paso a paso
+2. **[Glosario](./GLOSSARY.md)** - Todos los términos explicados de forma simple
+3. **[FAQ para Beginners](./FAQ-BEGINNERS.md)** - Preguntas frecuentes respondidas
+4. **[Cheat Sheet](./CHEATSHEET.md)** - Comandos y prompts más usados
+
+**Ruta recomendada**: Tutorial → Glosario → Tu primer proyecto → FAQ cuando tengas dudas
+
+---
+
 ## ⚡ Configuración Rápida
 
 ### Prerequisitos
