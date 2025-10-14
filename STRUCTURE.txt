@@ -1,0 +1,82 @@
+claude-code-advanced-guide/
+│
+├── 📄 README.md                          ⭐ PUNTO DE ENTRADA - Empieza aquí
+├── 🚀 QUICKSTART.md                      ⭐ Guía de 10 minutos
+├── 📊 SUMMARY.md                         Resumen completo del repo
+├── 📜 LICENSE                            Licencia MIT
+├── 🤝 CONTRIBUTING.md                    Guía para contribuidores
+│
+├── 📚 docs/                              DOCUMENTACIÓN PRINCIPAL
+│   ├── 01-installation.md                (TODO) Instalación detallada
+│   ├── 02-configuration.md               ✅ Configuración avanzada
+│   ├── 03-agents.md                      ✅ Agentes especializados  
+│   ├── 04-mcp-servers.md                 (TODO) Model Context Protocol
+│   ├── 05-workflows.md                   (TODO) Patrones de workflow
+│   ├── 06-best-practices.md              (TODO) Mejores prácticas
+│   └── 07-troubleshooting.md             (TODO) Resolución de problemas
+│
+├── 💡 examples/                          EJEMPLOS COMPLETOS
+│   │
+│   ├── 🏥 healthcare-ai/                 ✅ APP MÉDICA COMPLETA
+│   │   ├── README.md                     Documentación del ejemplo
+│   │   ├── CLAUDE.md                     ✅ Configuración médica
+│   │   ├── .claude/
+│   │   │   ├── agents/
+│   │   │   │   ├── medical-diagnostic.md      ✅ Agente diagnóstico
+│   │   │   │   ├── fhir-specialist.md         (TODO) FHIR expert
+│   │   │   │   ├── drug-interaction-checker.md (TODO) Interacciones
+│   │   │   │   └── medical-coder.md           (TODO) Codificación ICD-10
+│   │   │   ├── commands/
+│   │   │   │   ├── analyze-symptoms.md        (TODO) Comando síntomas
+│   │   │   │   ├── generate-report.md         (TODO) Reportes
+│   │   │   │   └── check-interactions.md      (TODO) Verificación
+│   │   │   └── settings.json                  (TODO) Config médica
+│   │   └── src/                               (TODO) Código ejemplo
+│   │
+│   ├── 💰 finance-analyzer/              (TODO) Analizador financiero
+│   ├── 🎓 education-tutor/               (TODO) Tutor educativo
+│   ├── 👀 code-reviewer/                 (TODO) Revisor avanzado
+│   ├── 🔧 api-generator/                 (TODO) Generador de APIs
+│   └── 🚀 devops-assistant/              (TODO) Asistente DevOps
+│
+├── 📋 templates/                         TEMPLATES REUTILIZABLES
+│   ├── agents/                           Agentes listos para usar
+│   │   ├── code-reviewer.md             ✅ Revisor de código
+│   │   ├── test-generator.md            (TODO) Generador de tests
+│   │   ├── security-auditor.md          (TODO) Auditor de seguridad
+│   │   ├── documentation-writer.md      (TODO) Escritor de docs
+│   │   ├── database-architect.md        (TODO) Arquitecto de DB
+│   │   └── api-developer.md             (TODO) Desarrollador API
+│   │
+│   ├── commands/                         (TODO) Comandos personalizados
+│   ├── settings/                         (TODO) Configs predefinidas
+│   └── CLAUDE.md                         ✅ Template completo
+│
+├── 🔧 scripts/                           SCRIPTS DE UTILIDAD
+│   ├── setup.sh                          ✅ Setup automático
+│   ├── validate-config.sh                (TODO) Validador
+│   └── generate-agent.sh                 (TODO) Generador de agentes
+│
+└── 📖 resources/                         (TODO) RECURSOS ADICIONALES
+    ├── mcp-servers-list.md               Lista de MCPs útiles
+    ├── tools-reference.md                Referencia de herramientas
+    └── glossary.md                       Glosario de términos
+
+ESTADO ACTUAL:
+✅ Completado: 9 archivos
+🚧 En progreso: 0 archivos  
+📋 TODO: 25+ archivos
+
+PRIORIDADES:
+1. ⭐⭐⭐ Completar examples/healthcare-ai/
+2. ⭐⭐ Completar docs/ (04, 05, 06, 07)
+3. ⭐ Completar templates/agents/
+4. ⭐ Agregar más examples/
+
+ARCHIVOS CLAVE PARA EMPEZAR:
+→ README.md          (Visión general)
+→ QUICKSTART.md      (Inicio rápido)  
+→ docs/02-configuration.md (Configuración)
+→ docs/03-agents.md  (Agentes)
+→ templates/         (Copiar y usar)
+→ scripts/setup.sh   (Automatizar)
