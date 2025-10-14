@@ -450,12 +450,11 @@ Este proyecto está bajo la licencia MIT - ver [LICENSE](LICENSE) para más deta
 
 ## 📞 Contacto
 
-- **Issues**: [GitHub Issues](https://github.com/tu-usuario/claude-code-advanced-guide/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/tu-usuario/claude-code-advanced-guide/discussions)
-- **Twitter**: [@tu_usuario](https://twitter.com/tu_usuario)
+- Issues: [GitHub Issues](https://github.com/tu-usuario/claude-code-advanced-guide/issues)
+- Discussions: [GitHub Discussions](https://github.com/tu-usuario/claude-code-advanced-guide/discussions)
+- Twitter: [@learntouseai](https://twitter.com/learntouseai)
 
 ---
 
 ⭐ Si esta guía te resulta útil, considera darle una estrella en GitHub!
 
-**Hecho con ❤️ por la comunidad de Claude Code**
