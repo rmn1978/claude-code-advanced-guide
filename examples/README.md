@@ -1,63 +1,63 @@
-# 📦 Ejemplos Completos - Claude Code
+# 📦 Complete Examples - Claude Code
 
-Colección de proyectos completos que demuestran cómo usar Claude Code con diferentes stacks tecnológicos y casos de uso reales.
+Collection of complete projects demonstrating how to use Claude Code with different technology stacks and real-world use cases.
 
-## 🎯 Índice de Ejemplos
+## 🎯 Example Index
 
-### Por Nivel de Complejidad
+### By Complexity Level
 
-#### 🟢 Básico (1-2 horas para completar)
-1. [Todo API - FastAPI](#1-todo-api---fastapi) - API REST simple con CRUD
-2. [Blog Static - Next.js](#2-blog-static---nextjs) - Blog estático con SSG
-3. [Landing Page - Nuxt](#3-landing-page---nuxt) - Landing page con formularios
+#### 🟢 Basic (1-2 hours to complete)
+1. [Todo API - FastAPI](#1-todo-api---fastapi) - Simple REST API with CRUD
+2. [Static Blog - Next.js](#2-static-blog---nextjs) - Static blog with SSG
+3. [Landing Page - Nuxt](#3-landing-page---nuxt) - Landing page with forms
 
-#### 🟡 Intermedio (3-5 horas para completar)
+#### 🟡 Intermediate (3-5 hours to complete)
 4. [E-commerce Product Catalog](#4-e-commerce-product-catalog) - Next.js + FastAPI
 5. [SaaS Dashboard](#5-saas-dashboard) - Nuxt + Django
 6. [API Gateway](#6-api-gateway) - Express + Microservices
 7. [Real-Time Chat](#7-real-time-chat-) - Next.js + Socket.io + Redis 💬
 
-#### 🔴 Avanzado (6-8 horas para completar)
+#### 🔴 Advanced (6-8 hours to complete)
 8. [Landing Page Builder](#8-landing-page-builder-) - No-Code Visual Editor 🎨
 9. [AI Code Reviewer](#9-ai-code-reviewer-) - GitHub PR Analysis with Claude AI 🤖
 10. [Video Streaming Platform](#10-video-streaming-platform-) - Netflix-scale Video Platform 🎬
 11. [Web3 NFT Marketplace](#11-web3-nft-marketplace-️) - Blockchain NFT Trading Platform ⛓️
 12. [Social Media Platform](#12-social-media-platform-) - Twitter/X Clone with ML Feed 🐦
 
-#### 🟣 Enterprise (1-2+ días)
+#### 🟣 Enterprise (1-2+ days)
 13. [ML Training Pipeline](#13-ml-training-pipeline-) - Production MLOps with MLflow + Optuna 🤖
-14. [Healthcare AI Platform](#14-healthcare-ai-platform) - Multi-stack con especialización médica
+14. [Healthcare AI Platform](#14-healthcare-ai-platform) - Multi-stack with medical specialization
 15. [Multi-tenant SaaS](#15-multi-tenant-saas) - Full-stack enterprise
 
 ---
 
-## 📋 Ejemplos Detallados
+## 📋 Detailed Examples
 
 ### 1. Todo API - FastAPI
 
 **Stack**: Python + FastAPI + SQLAlchemy + PostgreSQL
 
-**Descripción**: API REST completa para gestión de tareas con autenticación JWT.
+**Description**: Complete REST API for task management with JWT authentication.
 
 **Features**:
-- ✅ CRUD completo de tareas
-- ✅ Autenticación JWT
-- ✅ Paginación y filtros
-- ✅ Tests con pytest
-- ✅ OpenAPI docs automático
+- ✅ Complete CRUD for tasks
+- ✅ JWT authentication
+- ✅ Pagination and filters
+- ✅ Tests with pytest
+- ✅ Automatic OpenAPI docs
 
-**Agente recomendado**: `fastapi-architect`
+**Recommended agent**: `fastapi-architect`
 
-**Tiempo estimado**: 1-2 horas
+**Estimated time**: 1-2 hours
 
-**Directorio**: [`todo-api-fastapi/`](./todo-api-fastapi/)
+**Directory**: [`todo-api-fastapi/`](./todo-api-fastapi/)
 
-**Comandos rápidos**:
+**Quick commands**:
 ```bash
-# Crear proyecto
+# Create project
 > Use fastapi-architect to create a Todo API with JWT authentication
 
-# Estructura generada
+# Generated structure
 todo-api/
 ├── app/
 │   ├── api/v1/endpoints/todos.py
@@ -71,31 +71,31 @@ todo-api/
 
 ---
 
-### 2. Blog Static - Next.js
+### 2. Static Blog - Next.js
 
 **Stack**: Next.js 15 + MDX + Tailwind CSS
 
-**Descripción**: Blog estático con SSG, optimizado para SEO y performance.
+**Description**: Static blog with SSG, optimized for SEO and performance.
 
 **Features**:
-- ✅ SSG con ISR para posts
-- ✅ MDX para contenido rico
+- ✅ SSG with ISR for posts
+- ✅ MDX for rich content
 - ✅ SEO optimization
-- ✅ Core Web Vitals optimizado
+- ✅ Core Web Vitals optimized
 - ✅ Dark mode
 
-**Agente recomendado**: `nextjs-architect`
+**Recommended agent**: `nextjs-architect`
 
-**Tiempo estimado**: 1-2 horas
+**Estimated time**: 1-2 hours
 
-**Directorio**: [`blog-nextjs/`](./blog-nextjs/)
+**Directory**: [`blog-nextjs/`](./blog-nextjs/)
 
-**Comandos rápidos**:
+**Quick commands**:
 ```bash
-# Crear proyecto
+# Create project
 > Use nextjs-architect to create a static blog with MDX
 
-# Estructura generada
+# Generated structure
 blog-nextjs/
 ├── app/
 │   ├── blog/[slug]/page.tsx
@@ -111,20 +111,20 @@ blog-nextjs/
 
 **Stack**: Nuxt 3 + Vue 3 + Tailwind + Netlify Forms
 
-**Descripción**: Landing page moderna con formularios y animaciones.
+**Description**: Modern landing page with forms and animations.
 
 **Features**:
-- ✅ SSR con hydration optimizada
-- ✅ Formularios con validación
-- ✅ Animaciones con GSAP
-- ✅ SEO completo
-- ✅ Contact form funcional
+- ✅ SSR with optimized hydration
+- ✅ Forms with validation
+- ✅ Animations with GSAP
+- ✅ Complete SEO
+- ✅ Functional contact form
 
-**Agente recomendado**: `nuxt-architect`
+**Recommended agent**: `nuxt-architect`
 
-**Tiempo estimado**: 1-2 horas
+**Estimated time**: 1-2 hours
 
-**Directorio**: [`landing-nuxt/`](./landing-nuxt/)
+**Directory**: [`landing-nuxt/`](./landing-nuxt/)
 
 ---
 
@@ -132,25 +132,25 @@ blog-nextjs/
 
 **Stack**: Next.js 15 + FastAPI + PostgreSQL + Stripe
 
-**Descripción**: Catálogo de productos con carrito, checkout y pagos.
+**Description**: Product catalog with cart, checkout, and payments.
 
 **Features**:
-- ✅ Catálogo con filtros y búsqueda
-- ✅ Carrito de compras (Zustand)
-- ✅ Checkout con Stripe
-- ✅ Admin panel para productos
+- ✅ Catalog with filters and search
+- ✅ Shopping cart (Zustand)
+- ✅ Checkout with Stripe
+- ✅ Admin panel for products
 - ✅ Optimistic UI updates
 - ✅ Image optimization
 
-**Agentes recomendados**:
+**Recommended agents**:
 - Frontend: `nextjs-architect`
 - Backend: `fastapi-architect`
 
-**Tiempo estimado**: 4-5 horas
+**Estimated time**: 4-5 hours
 
-**Directorio**: [`ecommerce-nextjs-fastapi/`](./ecommerce-nextjs-fastapi/)
+**Directory**: [`ecommerce-nextjs-fastapi/`](./ecommerce-nextjs-fastapi/)
 
-**Arquitectura**:
+**Architecture**:
 ```
 Frontend (Next.js)           Backend (FastAPI)
 ├── Product Listing    ←→    ├── Products API
@@ -159,15 +159,15 @@ Frontend (Next.js)           Backend (FastAPI)
 └── User Dashboard           └── Auth (JWT)
 ```
 
-**Comandos rápidos**:
+**Quick commands**:
 ```bash
-# Fase 1: Backend API
+# Phase 1: Backend API
 > Use fastapi-architect to create an e-commerce API with products, orders, and Stripe integration
 
-# Fase 2: Frontend
+# Phase 2: Frontend
 > Use nextjs-architect to create an e-commerce frontend that consumes the FastAPI backend
 
-# Fase 3: Integración
+# Phase 3: Integration
 > Connect the Next.js app to the FastAPI backend with proper error handling and loading states
 ```
 
@@ -177,25 +177,25 @@ Frontend (Next.js)           Backend (FastAPI)
 
 **Stack**: Nuxt 3 + Django + PostgreSQL + Redis
 
-**Descripción**: Dashboard SaaS con autenticación, analytics y configuración.
+**Description**: SaaS dashboard with authentication, analytics, and configuration.
 
 **Features**:
 - ✅ Multi-tenant architecture
-- ✅ Dashboard con charts (Chart.js)
+- ✅ Dashboard with charts (Chart.js)
 - ✅ User management
 - ✅ Settings & preferences
 - ✅ Real-time notifications
 - ✅ API rate limiting
 
-**Agentes recomendados**:
+**Recommended agents**:
 - Frontend: `nuxt-architect`
 - Backend: `django-architect`
 
-**Tiempo estimado**: 5-6 horas
+**Estimated time**: 5-6 hours
 
-**Directorio**: [`saas-dashboard/`](./saas-dashboard/)
+**Directory**: [`saas-dashboard/`](./saas-dashboard/)
 
-**Arquitectura**:
+**Architecture**:
 ```
 Frontend (Nuxt 3)            Backend (Django)
 ├── Dashboard         ←→     ├── Analytics API
@@ -210,21 +210,21 @@ Frontend (Nuxt 3)            Backend (Django)
 
 **Stack**: Express.js + TypeScript + Redis + JWT
 
-**Descripción**: API Gateway que coordina microservicios con rate limiting.
+**Description**: API Gateway that coordinates microservices with rate limiting.
 
 **Features**:
 - ✅ Request routing
-- ✅ Rate limiting con Redis
+- ✅ Rate limiting with Redis
 - ✅ JWT validation
 - ✅ Request/response logging
 - ✅ Circuit breaker pattern
 - ✅ Health checks
 
-**Agente recomendado**: `express-architect`
+**Recommended agent**: `express-architect`
 
-**Tiempo estimado**: 3-4 horas
+**Estimated time**: 3-4 hours
 
-**Directorio**: [`api-gateway-express/`](./api-gateway-express/)
+**Directory**: [`api-gateway-express/`](./api-gateway-express/)
 
 **Microservices**:
 ```
@@ -241,7 +241,7 @@ API Gateway (Express)
 
 **Stack**: FastAPI + Celery + PostgreSQL + Redis + Claude API + GitHub Webhooks
 
-**Descripción**: Sistema de revisión automática de código que usa Claude AI para analizar pull requests en GitHub, detectar bugs, vulnerabilidades de seguridad, y sugerir mejoras.
+**Description**: Automated code review system that uses Claude AI to analyze pull requests on GitHub, detect bugs, security vulnerabilities, and suggest improvements.
 
 **Features**:
 - ✅ GitHub webhook integration
@@ -250,18 +250,18 @@ API Gateway (Express)
 - ✅ Security vulnerability detection
 - ✅ Performance issue identification
 - ✅ Code quality metrics
-- ✅ Background job processing con Celery
+- ✅ Background job processing with Celery
 - ✅ Multi-repository support
 - ✅ Custom review rules
 - ✅ Severity scoring
 
-**Agente recomendado**: `fastapi-architect`
+**Recommended agent**: `fastapi-architect`
 
-**Tiempo estimado**: 6-8 horas
+**Estimated time**: 6-8 hours
 
-**Directorio**: [`ai-code-reviewer/`](./ai-code-reviewer/)
+**Directory**: [`ai-code-reviewer/`](./ai-code-reviewer/)
 
-**Arquitectura**:
+**Architecture**:
 ```
 GitHub PR → Webhook → FastAPI → Celery Worker → Claude API → PR Comments
                           ↓
@@ -270,9 +270,9 @@ GitHub PR → Webhook → FastAPI → Celery Worker → Claude API → PR Commen
                        Redis (job queue)
 ```
 
-**Comandos rápidos**:
+**Quick commands**:
 ```bash
-# Crear proyecto
+# Create project
 > Use fastapi-architect to create an AI code reviewer that:
   - Receives GitHub webhook events
   - Analyzes code with Claude API
@@ -280,7 +280,7 @@ GitHub PR → Webhook → FastAPI → Celery Worker → Claude API → PR Commen
   - Detects security vulnerabilities
   - Tracks analysis history
 
-# Estructura generada
+# Generated structure
 ai-code-reviewer/
 ├── app/
 │   ├── api/v1/endpoints/webhooks.py
@@ -294,13 +294,13 @@ ai-code-reviewer/
 └── docker-compose.yml
 ```
 
-**Casos de uso**:
-- Equipos de desarrollo (code review automation)
+**Use cases**:
+- Development teams (code review automation)
 - Open source projects
-- Empresas con multiple repos
-- Consultorías y agencias
+- Companies with multiple repos
+- Consultancies and agencies
 
-**Valor comercial**: $10k-$50k MRR como SaaS
+**Commercial value**: $10k-$50k MRR as SaaS
 
 ---
 
@@ -308,14 +308,14 @@ ai-code-reviewer/
 
 **Stack**: Next.js 15 + FastAPI + FFmpeg + AWS S3 + CloudFront + PostgreSQL + Redis
 
-**Descripción**: Plataforma completa de video streaming estilo Netflix con transcoding, HLS adaptive streaming, CDN, y player personalizado.
+**Description**: Complete Netflix-style video streaming platform with transcoding, HLS adaptive streaming, CDN, and custom player.
 
 **Features**:
-- ✅ Video upload y processing
+- ✅ Video upload and processing
 - ✅ FFmpeg transcoding pipeline
 - ✅ HLS adaptive bitrate streaming
 - ✅ CDN configuration (CloudFront)
-- ✅ Custom video player con HLS.js
+- ✅ Custom video player with HLS.js
 - ✅ Watch progress tracking
 - ✅ Subtitle support (WebVTT)
 - ✅ Quality selector (1080p, 720p, 480p, 360p)
@@ -324,24 +324,24 @@ ai-code-reviewer/
 - ✅ Content management system
 - ✅ User playlists
 
-**Agentes recomendados**:
+**Recommended agents**:
 - Frontend: `nextjs-architect`
 - Backend: `fastapi-architect`
 
-**Tiempo estimado**: 8-12 horas
+**Estimated time**: 8-12 hours
 
-**Directorio**: [`video-streaming-platform/`](./video-streaming-platform/)
+**Directory**: [`video-streaming-platform/`](./video-streaming-platform/)
 
-**Arquitectura**:
+**Architecture**:
 ```
 Upload → S3 → Lambda (FFmpeg) → Transcoded Videos → CloudFront CDN
                                            ↓
                                     HLS Player ← Analytics
 ```
 
-**Comandos rápidos**:
+**Quick commands**:
 ```bash
-# Crear proyecto
+# Create project
 > Use nextjs-architect and fastapi-architect to create a video streaming platform with:
   - Video upload to S3
   - FFmpeg transcoding (multiple qualities)
@@ -351,7 +351,7 @@ Upload → S3 → Lambda (FFmpeg) → Transcoded Videos → CloudFront CDN
   - Progress tracking
   - Analytics
 
-# Estructura generada
+# Generated structure
 video-streaming-platform/
 ├── frontend/
 │   ├── src/
@@ -370,21 +370,21 @@ video-streaming-platform/
     └── terraform/
 ```
 
-**Características técnicas**:
+**Technical features**:
 - FFmpeg multi-quality transcoding
-- HLS.js player con adaptive bitrate
-- S3 + CloudFront para CDN
-- Lambda para serverless transcoding
-- PostgreSQL para metadata
-- Redis para caching
+- HLS.js player with adaptive bitrate
+- S3 + CloudFront for CDN
+- Lambda for serverless transcoding
+- PostgreSQL for metadata
+- Redis for caching
 
-**Casos de uso**:
-- Plataformas educativas (cursos online)
+**Use cases**:
+- Educational platforms (online courses)
 - Corporate training
 - Entertainment platforms
 - Content creator platforms
 
-**Valor comercial**: $100k-$15M MRR como SaaS
+**Commercial value**: $100k-$15M MRR as SaaS
 
 ---
 
@@ -392,31 +392,31 @@ video-streaming-platform/
 
 **Stack**: Next.js 15 + Solidity + Hardhat + Ethers.js + IPFS + The Graph + PostgreSQL
 
-**Descripción**: Marketplace completo de NFTs con smart contracts en Solidity, integración Web3, minting, trading, subastas, y wallet connection.
+**Description**: Complete NFT marketplace with smart contracts in Solidity, Web3 integration, minting, trading, auctions, and wallet connection.
 
 **Features**:
 - ✅ ERC-721 NFT smart contract
 - ✅ Marketplace smart contract
 - ✅ Auction smart contract
 - ✅ Wallet connection (MetaMask, WalletConnect)
-- ✅ NFT minting con IPFS storage
+- ✅ NFT minting with IPFS storage
 - ✅ Buy/Sell/Trade NFTs
 - ✅ Auction system (English auction)
-- ✅ Royalty system para creators
+- ✅ Royalty system for creators
 - ✅ The Graph indexing
 - ✅ Transaction history
 - ✅ Collection management
 - ✅ Rarity traits
 
-**Agentes recomendados**:
+**Recommended agents**:
 - Frontend: `nextjs-architect`
 - Smart Contracts: General-purpose agent
 
-**Tiempo estimado**: 8-12 horas
+**Estimated time**: 8-12 hours
 
-**Directorio**: [`web3-nft-marketplace/`](./web3-nft-marketplace/)
+**Directory**: [`web3-nft-marketplace/`](./web3-nft-marketplace/)
 
-**Arquitectura**:
+**Architecture**:
 ```
 Frontend (Next.js) ← Ethers.js → Smart Contracts (Solidity)
         ↓                                  ↓
@@ -436,9 +436,9 @@ contracts/
 └── interfaces/
 ```
 
-**Comandos rápidos**:
+**Quick commands**:
 ```bash
-# Crear proyecto
+# Create project
 > Create a Web3 NFT marketplace with:
   - Solidity smart contracts (ERC-721, Marketplace, Auction)
   - Next.js frontend with Ethers.js
@@ -447,7 +447,7 @@ contracts/
   - Wallet connection support
   - Royalty system
 
-# Estructura generada
+# Generated structure
 web3-nft-marketplace/
 ├── frontend/
 │   ├── src/
@@ -464,22 +464,22 @@ web3-nft-marketplace/
 └── test/
 ```
 
-**Características técnicas**:
+**Technical features**:
 - Hardhat development environment
-- Ethers.js para Web3 integration
-- IPFS (Pinata) para metadata storage
-- The Graph para indexing eficiente
-- ERC-721 con royalties
+- Ethers.js for Web3 integration
+- IPFS (Pinata) for metadata storage
+- The Graph for efficient indexing
+- ERC-721 with royalties
 - Gas optimization
 - Reentrancy protection
 
-**Casos de uso**:
+**Use cases**:
 - NFT art marketplace
 - Gaming asset marketplace
 - Digital collectibles
 - Tokenized real estate
 
-**Valor comercial**: $50k-$500k MRR (2.5% platform fee)
+**Commercial value**: $50k-$500k MRR (2.5% platform fee)
 
 ---
 
@@ -487,15 +487,15 @@ web3-nft-marketplace/
 
 **Stack**: Next.js 15 + FastAPI + PostgreSQL + Redis + ElasticSearch + S3 + ML (Python)
 
-**Descripción**: Plataforma de redes sociales completa estilo Twitter/X con feed algorítmico, real-time updates, trending topics, y content moderation con IA.
+**Description**: Complete Twitter/X-style social media platform with algorithmic feed, real-time updates, trending topics, and AI content moderation.
 
 **Features**:
-- ✅ User profiles y bio
+- ✅ User profiles and bio
 - ✅ Post creation (text, images, videos)
 - ✅ Follow/Unfollow system
-- ✅ Algorithmic feed con ML ranking
+- ✅ Algorithmic feed with ML ranking
 - ✅ Trending topics
-- ✅ Hashtags y mentions
+- ✅ Hashtags and mentions
 - ✅ Likes, retweets, comments
 - ✅ Real-time notifications (WebSocket)
 - ✅ Direct messages
@@ -504,15 +504,15 @@ web3-nft-marketplace/
 - ✅ Image/video upload
 - ✅ Analytics dashboard
 
-**Agentes recomendados**:
+**Recommended agents**:
 - Frontend: `nextjs-architect`
 - Backend: `fastapi-architect`
 
-**Tiempo estimado**: 12-16 horas
+**Estimated time**: 12-16 hours
 
-**Directorio**: [`social-media-platform/`](./social-media-platform/)
+**Directory**: [`social-media-platform/`](./social-media-platform/)
 
-**Arquitectura**:
+**Architecture**:
 ```
 Next.js App ← REST API → FastAPI Backend
      ↓                          ↓
@@ -525,9 +525,9 @@ Notifications          ElasticSearch (search)
                     Claude AI (moderation)
 ```
 
-**Comandos rápidos**:
+**Quick commands**:
 ```bash
-# Crear proyecto
+# Create project
 > Create a social media platform with:
   - Next.js 15 frontend
   - FastAPI backend with async
@@ -539,7 +539,7 @@ Notifications          ElasticSearch (search)
   - WebSocket notifications
   - Image/video uploads to S3
 
-# Estructura generada
+# Generated structure
 social-media-platform/
 ├── frontend/
 │   ├── src/
@@ -598,13 +598,13 @@ model Follow {
 - Diversity injection
 - Real-time updates
 
-**Casos de uso**:
-- Nicho communities (vertical social networks)
+**Use cases**:
+- Niche communities (vertical social networks)
 - Corporate internal social networks
 - Event-based platforms
 - Content creator platforms
 
-**Valor comercial**: $20k-$200k MRR (ads, premium features)
+**Commercial value**: $20k-$200k MRR (ads, premium features)
 
 ---
 
@@ -612,32 +612,32 @@ model Follow {
 
 **Stack**: Python 3.11 + scikit-learn + MLflow + Optuna + FastAPI + PostgreSQL
 
-**Descripción**: Pipeline completo de Machine Learning para predicción de customer churn, incluyendo experiment tracking, hyperparameter tuning, model registry, deployment, y monitoring.
+**Description**: Complete Machine Learning pipeline for customer churn prediction, including experiment tracking, hyperparameter tuning, model registry, deployment, and monitoring.
 
 **Features**:
-- ✅ Data preprocessing y feature engineering
-- ✅ Experiment tracking con MLflow
-- ✅ Hyperparameter optimization con Optuna
-- ✅ Model versioning y registry
+- ✅ Data preprocessing and feature engineering
+- ✅ Experiment tracking with MLflow
+- ✅ Hyperparameter optimization with Optuna
+- ✅ Model versioning and registry
 - ✅ FastAPI inference endpoint
-- ✅ Data drift detection con Evidently
+- ✅ Data drift detection with Evidently
 - ✅ Automated retraining pipeline
 - ✅ A/B testing framework
 - ✅ Prometheus metrics export
 - ✅ Docker + Kubernetes deployment
 
-**Algoritmos incluidos**:
+**Included algorithms**:
 - Logistic Regression (baseline)
 - Random Forest (production)
 - Gradient Boosting (high performance)
 
-**Agente recomendado**: `ml-engineer` (🚧 próximamente)
+**Recommended agent**: `ml-engineer` (🚧 coming soon)
 
-**Tiempo estimado**: 8-10 horas
+**Estimated time**: 8-10 hours
 
-**Directorio**: [`ml-training-pipeline/`](./ml-training-pipeline/)
+**Directory**: [`ml-training-pipeline/`](./ml-training-pipeline/)
 
-**Arquitectura**:
+**Architecture**:
 ```
 Raw Data → Preprocessing → Feature Engineering
     ↓
@@ -654,7 +654,7 @@ Monitoring & Drift Detection
 Automated Retraining
 ```
 
-**Comandos rápidos**:
+**Quick commands**:
 ```bash
 # Setup
 docker-compose up -d  # PostgreSQL + MLflow
@@ -686,7 +686,7 @@ open http://localhost:5000
 - Artifact viewer
 ```
 
-**Valor comercial**: $15k-$80k MRR (como plataforma MLOps)
+**Commercial value**: $15k-$80k MRR (as MLOps platform)
 
 **Use cases**:
 - Customer churn prediction
@@ -699,9 +699,9 @@ open http://localhost:5000
 
 ### 14. Healthcare AI Platform
 
-**Stack**: Multi-stack con especialización médica
+**Stack**: Multi-stack with medical specialization
 
-**Descripción**: Plataforma completa de healthcare con IA, HIPAA compliance.
+**Description**: Complete healthcare platform with AI, HIPAA compliance.
 
 **Features**:
 - ✅ Patient management
@@ -711,16 +711,16 @@ open http://localhost:5000
 - ✅ EHR integration
 - ✅ Appointment scheduling
 
-**Agentes recomendados**:
+**Recommended agents**:
 - Medical: `medical-diagnostic`
 - Frontend: `nextjs-architect`
 - Backend: `django-architect`
 
-**Tiempo estimado**: 1-2 días
+**Estimated time**: 1-2 days
 
-**Directorio**: [`healthcare-ai/`](./healthcare-ai/)
+**Directory**: [`healthcare-ai/`](./healthcare-ai/)
 
-**Estado**: ⚠️ En desarrollo (parcialmente completado)
+**Status**: ⚠️ In development (partially completed)
 
 ---
 
@@ -728,7 +728,7 @@ open http://localhost:5000
 
 **Stack**: React + Express + Socket.io + Redis + PostgreSQL
 
-**Descripción**: Chat en tiempo real con rooms, typing indicators, file upload.
+**Description**: Real-time chat with rooms, typing indicators, file upload.
 
 **Features**:
 - ✅ Real-time messaging (Socket.io)
@@ -738,13 +738,13 @@ open http://localhost:5000
 - ✅ Message history
 - ✅ File uploads (S3)
 
-**Agentes recomendados**:
+**Recommended agents**:
 - Backend: `express-architect`
 - Frontend: General-purpose agent
 
-**Tiempo estimado**: 6-8 horas
+**Estimated time**: 6-8 hours
 
-**Directorio**: [`chat-realtime/`](./chat-realtime/)
+**Directory**: [`chat-realtime/`](./chat-realtime/)
 
 ---
 
@@ -752,7 +752,7 @@ open http://localhost:5000
 
 **Stack**: Next.js + Django + PostgreSQL + Redis + S3
 
-**Descripción**: SaaS completo con multi-tenancy, billing, team management.
+**Description**: Complete SaaS with multi-tenancy, billing, team management.
 
 **Features**:
 - ✅ Multi-tenant database design
@@ -762,215 +762,215 @@ open http://localhost:5000
 - ✅ Custom domains
 - ✅ White-label support
 
-**Agentes recomendados**:
+**Recommended agents**:
 - Frontend: `nextjs-architect`
 - Backend: `django-architect`
 - Orchestration: Multi-agent workflow
 
-**Tiempo estimado**: 2-3 días
+**Estimated time**: 2-3 days
 
-**Directorio**: [`multitenant-saas/`](./multitenant-saas/)
+**Directory**: [`multitenant-saas/`](./multitenant-saas/)
 
 ---
 
-## 🚀 Cómo Usar los Ejemplos
+## 🚀 How to Use the Examples
 
-### Opción 1: Empezar desde Cero
+### Option 1: Start from Scratch
 
 ```bash
-# 1. Elige un ejemplo
+# 1. Choose an example
 cd examples/
 
-# 2. Usa el agente recomendado
-> Use [agente-nombre] to create [project description]
+# 2. Use the recommended agent
+> Use [agent-name] to create [project description]
 
-# 3. Sigue el README del ejemplo
+# 3. Follow the example's README
 cat ecommerce-nextjs-fastapi/README.md
 ```
 
-### Opción 2: Clonar y Personalizar
+### Option 2: Clone and Customize
 
 ```bash
-# 1. Copia el directorio
+# 1. Copy the directory
 cp -r examples/todo-api-fastapi my-custom-api
 
-# 2. Personaliza con Claude Code
+# 2. Customize with Claude Code
 > Modify this Todo API to add [your custom features]
 ```
 
-### Opción 3: Usar como Referencia
+### Option 3: Use as Reference
 
 ```bash
-# Lee el código como referencia
+# Read the code as reference
 cat examples/ecommerce-nextjs-fastapi/backend/app/api/v1/endpoints/products.py
 
-# Pregunta a Claude
+# Ask Claude
 > Explain how this e-commerce example handles pagination
 ```
 
 ---
 
-## 📊 Comparación de Ejemplos
+## 📊 Example Comparison
 
-| Ejemplo | Complejidad | Stack | Features | Tiempo | Tipo |
-|---------|-------------|-------|----------|--------|------|
-| Todo API | 🟢 Básico | FastAPI | CRUD, Auth | 1-2h | API |
-| Blog Static | 🟢 Básico | Next.js | SSG, SEO | 1-2h | Frontend |
-| Landing Page | 🟢 Básico | Nuxt | Forms, SEO | 1-2h | Frontend |
-| E-commerce | 🟡 Intermedio | Next.js + FastAPI | Payments, Cart | 4-5h | Full-stack |
-| SaaS Dashboard | 🟡 Intermedio | Nuxt + Django | Multi-tenant | 5-6h | Full-stack |
-| API Gateway | 🟡 Intermedio | Express | Microservices | 3-4h | Backend |
-| Real-Time Chat 💬 | 🟡 Intermedio | Next.js + Socket.io | WebSockets, Redis | 4-5h | Real-time |
-| Landing Page Builder 🎨 | 🔴 Avanzado | Next.js + DnD | No-Code Editor | 6-8h | Frontend |
-| AI Code Reviewer 🤖 | 🔴 Avanzado | FastAPI + Claude AI | PR Analysis, Security | 6-8h | AI/DevOps |
-| Video Platform 🎬 | 🔴 Avanzado | Next.js + FFmpeg | HLS, CDN, Transcoding | 8-12h | Media |
-| Web3 NFT Marketplace ⛓️ | 🔴 Avanzado | Next.js + Solidity | Smart Contracts, IPFS | 8-12h | Blockchain |
-| Social Media 🐦 | 🔴 Avanzado | Next.js + FastAPI + ML | Feed Algo, Real-time | 12-16h | Full-stack |
+| Example | Complexity | Stack | Features | Time | Type |
+|---------|-------------|-------|----------|------|------|
+| Todo API | 🟢 Basic | FastAPI | CRUD, Auth | 1-2h | API |
+| Static Blog | 🟢 Basic | Next.js | SSG, SEO | 1-2h | Frontend |
+| Landing Page | 🟢 Basic | Nuxt | Forms, SEO | 1-2h | Frontend |
+| E-commerce | 🟡 Intermediate | Next.js + FastAPI | Payments, Cart | 4-5h | Full-stack |
+| SaaS Dashboard | 🟡 Intermediate | Nuxt + Django | Multi-tenant | 5-6h | Full-stack |
+| API Gateway | 🟡 Intermediate | Express | Microservices | 3-4h | Backend |
+| Real-Time Chat 💬 | 🟡 Intermediate | Next.js + Socket.io | WebSockets, Redis | 4-5h | Real-time |
+| Landing Page Builder 🎨 | 🔴 Advanced | Next.js + DnD | No-Code Editor | 6-8h | Frontend |
+| AI Code Reviewer 🤖 | 🔴 Advanced | FastAPI + Claude AI | PR Analysis, Security | 6-8h | AI/DevOps |
+| Video Platform 🎬 | 🔴 Advanced | Next.js + FFmpeg | HLS, CDN, Transcoding | 8-12h | Media |
+| Web3 NFT Marketplace ⛓️ | 🔴 Advanced | Next.js + Solidity | Smart Contracts, IPFS | 8-12h | Blockchain |
+| Social Media 🐦 | 🔴 Advanced | Next.js + FastAPI + ML | Feed Algo, Real-time | 12-16h | Full-stack |
 | Healthcare AI | 🟣 Enterprise | Multi-stack | HIPAA, FHIR | 1-2d | Healthcare |
 | Multi-tenant SaaS | 🟣 Enterprise | Next.js + Django | Billing, Teams | 2-3d | Enterprise |
 
 ---
 
-## 🎯 Rutas de Aprendizaje por Objetivo
+## 🎯 Learning Paths by Objective
 
-### Objetivo: Frontend Moderno
+### Goal: Modern Frontend
 
-1. **Nivel 1**: Blog Static (Next.js) - Aprende SSG
-2. **Nivel 2**: Landing Page (Nuxt) - Aprende SSR
-3. **Nivel 3**: E-commerce Frontend - Aprende state management
+1. **Level 1**: Static Blog (Next.js) - Learn SSG
+2. **Level 2**: Landing Page (Nuxt) - Learn SSR
+3. **Level 3**: E-commerce Frontend - Learn state management
 
-**Agentes a dominar**: `nextjs-architect`, `nuxt-architect`
-
----
-
-### Objetivo: Backend APIs
-
-1. **Nivel 1**: Todo API (FastAPI) - Aprende REST basics
-2. **Nivel 2**: API Gateway (Express) - Aprende arquitectura
-3. **Nivel 3**: Django API - Aprende ORM avanzado
-
-**Agentes a dominar**: `fastapi-architect`, `express-architect`, `django-architect`
+**Agents to master**: `nextjs-architect`, `nuxt-architect`
 
 ---
 
-### Objetivo: Full-Stack Developer
+### Goal: Backend APIs
 
-1. **Nivel 1**: Todo API + Blog = Full-stack simple
-2. **Nivel 2**: E-commerce - Integración frontend-backend
-3. **Nivel 3**: SaaS Dashboard - Multi-tenant
+1. **Level 1**: Todo API (FastAPI) - Learn REST basics
+2. **Level 2**: API Gateway (Express) - Learn architecture
+3. **Level 3**: Django API - Learn advanced ORM
 
-**Agentes a dominar**: Todos los stack architects + multi-agent orchestration
-
----
-
-### Objetivo: Enterprise/Startup
-
-1. **Nivel 1**: API Gateway - Aprende microservices
-2. **Nivel 2**: Real-time Chat - Aprende WebSockets
-3. **Nivel 3**: Multi-tenant SaaS - Aprende escalabilidad
-
-**Agentes a dominar**: Todos + domain specialists
+**Agents to master**: `fastapi-architect`, `express-architect`, `django-architect`
 
 ---
 
-## 💡 Tips para Maximizar el Aprendizaje
+### Goal: Full-Stack Developer
 
-### 1. Progresión Incremental
+1. **Level 1**: Todo API + Blog = Simple full-stack
+2. **Level 2**: E-commerce - Frontend-backend integration
+3. **Level 3**: SaaS Dashboard - Multi-tenant
+
+**Agents to master**: All stack architects + multi-agent orchestration
+
+---
+
+### Goal: Enterprise/Startup
+
+1. **Level 1**: API Gateway - Learn microservices
+2. **Level 2**: Real-time Chat - Learn WebSockets
+3. **Level 3**: Multi-tenant SaaS - Learn scalability
+
+**Agents to master**: All + domain specialists
+
+---
+
+## 💡 Tips to Maximize Learning
+
+### 1. Incremental Progression
 ```bash
-# ❌ NO: Empezar con el más complejo
+# ❌ NO: Start with the most complex
 > Create a multi-tenant SaaS with everything
 
-# ✅ SÍ: Progresar paso a paso
-> Create a simple Todo API (día 1)
-> Add authentication (día 2)
-> Add pagination (día 3)
+# ✅ YES: Progress step by step
+> Create a simple Todo API (day 1)
+> Add authentication (day 2)
+> Add pagination (day 3)
 ```
 
-### 2. Usar Agentes Específicos
+### 2. Use Specific Agents
 ```bash
-# ❌ NO: Prompt genérico
+# ❌ NO: Generic prompt
 > Create an API
 
-# ✅ SÍ: Usar agente especializado
+# ✅ YES: Use specialized agent
 > Use fastapi-architect to create a REST API with Pydantic validation
 ```
 
-### 3. Pedir Explicaciones
+### 3. Ask for Explanations
 ```bash
-# Durante el desarrollo
+# During development
 > Explain why you chose async here instead of sync
 
-# Después de completar
+# After completing
 > Review the security best practices in this code
 ```
 
-### 4. Iterar y Mejorar
+### 4. Iterate and Improve
 ```bash
-# Primera versión funcional
+# First functional version
 > Create basic e-commerce
 
-# Mejorar performance
+# Improve performance
 > Optimize this code for better performance
 
-# Mejorar seguridad
+# Improve security
 > Use security-auditor to check for vulnerabilities
 ```
 
 ---
 
-## 🔗 Recursos Relacionados
+## 🔗 Related Resources
 
-- **Agentes**: [`../agents/README.md`](../agents/README.md) - Todos los agentes disponibles
-- **Guías**: [`../docs/`](../docs/) - Documentación completa
-- **Templates**: [`../templates/`](../templates/) - Templates base
-- **Scripts**: [`../scripts/`](../scripts/) - Herramientas útiles
+- **Agents**: [`../agents/README.md`](../agents/README.md) - All available agents
+- **Guides**: [`../docs/`](../docs/) - Complete documentation
+- **Templates**: [`../templates/`](../templates/) - Base templates
+- **Scripts**: [`../scripts/`](../scripts/) - Useful tools
 
 ---
 
-## 🤝 Contribuir Ejemplos
+## 🤝 Contributing Examples
 
-¿Creaste un proyecto útil? ¡Compártelo!
+Created a useful project? Share it!
 
-### Estructura de un Ejemplo
+### Example Structure
 
 ```
 examples/
 └── my-example/
-    ├── README.md              # Descripción completa
-    ├── ARCHITECTURE.md        # Decisiones de arquitectura
+    ├── README.md              # Complete description
+    ├── ARCHITECTURE.md        # Architecture decisions
     ├── .claude/
-    │   ├── CLAUDE.md         # Contexto del proyecto
-    │   └── agents/           # Agentes personalizados
-    ├── frontend/             # (si aplica)
-    ├── backend/              # (si aplica)
-    ├── docs/                 # Documentación adicional
-    └── scripts/              # Scripts útiles
+    │   ├── CLAUDE.md         # Project context
+    │   └── agents/           # Custom agents
+    ├── frontend/             # (if applicable)
+    ├── backend/              # (if applicable)
+    ├── docs/                 # Additional documentation
+    └── scripts/              # Useful scripts
 ```
 
-### Checklist para Contribuir
+### Contribution Checklist
 
-- [ ] README completo con descripción
-- [ ] Código comentado y limpio
-- [ ] Agentes recomendados listados
-- [ ] Tiempo estimado incluido
-- [ ] ARCHITECTURE.md explicando decisiones
-- [ ] .gitignore apropiado
-- [ ] Instrucciones de setup claras
+- [ ] Complete README with description
+- [ ] Commented and clean code
+- [ ] Listed recommended agents
+- [ ] Estimated time included
+- [ ] ARCHITECTURE.md explaining decisions
+- [ ] Appropriate .gitignore
+- [ ] Clear setup instructions
 
 ---
 
-## 📅 Roadmap de Ejemplos
+## 📅 Examples Roadmap
 
-### v0.2 (Actual)
-- ✅ Healthcare AI (parcial)
-- ✅ Structure y documentación
+### v0.2 (Current)
+- ✅ Healthcare AI (partial)
+- ✅ Structure and documentation
 
-### v0.3 (Próximo)
-- 🔲 Todo API - FastAPI (completo)
-- 🔲 E-commerce - Next.js + FastAPI (completo)
-- 🔲 SaaS Dashboard - Nuxt + Django (completo)
+### v0.3 (Next)
+- 🔲 Todo API - FastAPI (complete)
+- 🔲 E-commerce - Next.js + FastAPI (complete)
+- 🔲 SaaS Dashboard - Nuxt + Django (complete)
 
-### v0.4 (Futuro)
+### v0.4 (Future)
 - 🔲 Real-time Chat
 - 🔲 API Gateway
 - 🔲 Multi-tenant SaaS
@@ -981,29 +981,29 @@ examples/
 
 **Stack**: Next.js 15 + Socket.io + Redis + PostgreSQL
 
-**Descripción**: Aplicación de chat en tiempo real con salas, mensajes directos, typing indicators, y presencia de usuarios.
+**Description**: Real-time chat application with rooms, direct messages, typing indicators, and user presence.
 
 **Features**:
-- ✅ Real-time messaging con Socket.io
-- ✅ Salas públicas y privadas
-- ✅ Mensajes directos (DMs)
+- ✅ Real-time messaging with Socket.io
+- ✅ Public and private rooms
+- ✅ Direct messages (DMs)
 - ✅ Typing indicators
 - ✅ Online/offline presence
-- ✅ Message history con paginación
-- ✅ File uploads (imágenes)
+- ✅ Message history with pagination
+- ✅ File uploads (images)
 - ✅ Emoji reactions
 - ✅ Read receipts
-- ✅ Redis pub/sub para múltiples servidores
+- ✅ Redis pub/sub for multiple servers
 
-**Agente recomendado**: `nextjs-architect`
+**Recommended agent**: `nextjs-architect`
 
-**Tiempo estimado**: 4-5 horas
+**Estimated time**: 4-5 hours
 
-**Directorio**: [`realtime-chat-socketio/`](./realtime-chat-socketio/)
+**Directory**: [`realtime-chat-socketio/`](./realtime-chat-socketio/)
 
-**Comandos rápidos**:
+**Quick commands**:
 ```bash
-# Crear proyecto
+# Create project
 > Use nextjs-architect to create a real-time chat application with:
   - Next.js 15 with App Router
   - Socket.io for real-time messaging
@@ -1013,7 +1013,7 @@ examples/
   - File uploads to S3
   - Typing indicators and presence
 
-# Estructura generada
+# Generated structure
 realtime-chat-socketio/
 ├── src/
 │   ├── app/
@@ -1027,20 +1027,20 @@ realtime-chat-socketio/
 └── docker-compose.yml
 ```
 
-**Características técnicas**:
-- Socket.io con Redis adapter para horizontal scaling
-- Prisma ORM para PostgreSQL
+**Technical features**:
+- Socket.io with Redis adapter for horizontal scaling
+- Prisma ORM for PostgreSQL
 - JWT authentication
-- Typing indicators con debounce
-- Message reactions y read receipts
+- Typing indicators with debounce
+- Message reactions and read receipts
 - File upload to S3
-- Room management y DMs
+- Room management and DMs
 
-**Casos de uso**:
-- Chat interno de empresas
-- Soporte técnico en vivo
-- Comunidades online
-- Plataformas de colaboración
+**Use cases**:
+- Internal company chat
+- Live technical support
+- Online communities
+- Collaboration platforms
 
 ---
 
@@ -1048,30 +1048,30 @@ realtime-chat-socketio/
 
 **Stack**: Next.js 15 + React DnD + TipTap + Tailwind CSS + PostgreSQL
 
-**Descripción**: Editor visual drag-and-drop para crear landing pages sin código. Incluye componentes preconstruidos, editor de contenido, personalización de estilos, y exportación de páginas.
+**Description**: Visual drag-and-drop editor for creating landing pages without code. Includes pre-built components, content editor, style customization, and page export.
 
 **Features**:
 - ✅ Drag & Drop visual editor
-- ✅ 20+ componentes preconstruidos
-- ✅ Editor de texto rico (TipTap)
+- ✅ 20+ pre-built components
+- ✅ Rich text editor (TipTap)
 - ✅ Responsive design preview (mobile, tablet, desktop)
-- ✅ Style customization (colores, tipografía, spacing)
-- ✅ Image uploads y media library
+- ✅ Style customization (colors, typography, spacing)
+- ✅ Image uploads and media library
 - ✅ Template gallery
 - ✅ Undo/Redo history
 - ✅ Export to HTML/React
 - ✅ SEO meta tags editor
 - ✅ Version history
 
-**Agente recomendado**: `nextjs-architect`
+**Recommended agent**: `nextjs-architect`
 
-**Tiempo estimado**: 6-8 horas
+**Estimated time**: 6-8 hours
 
-**Directorio**: [`landing-page-builder/`](./landing-page-builder/)
+**Directory**: [`landing-page-builder/`](./landing-page-builder/)
 
-**Comandos rápidos**:
+**Quick commands**:
 ```bash
-# Crear proyecto
+# Create project
 > Use nextjs-architect to create a landing page builder with:
   - Next.js 15 with App Router
   - React DnD for drag and drop
@@ -1082,7 +1082,7 @@ realtime-chat-socketio/
   - Template system
   - Export to HTML
 
-# Estructura generada
+# Generated structure
 landing-page-builder/
 ├── src/
 │   ├── app/
@@ -1100,45 +1100,45 @@ landing-page-builder/
 └── package.json
 ```
 
-**Categorías de Bloques**:
+**Block Categories**:
 - **Marketing**: Hero, Features, CTA, Pricing, FAQ
 - **Social Proof**: Testimonials, Logo Cloud, Stats, Reviews
 - **Content**: Text, Image, Gallery, Video, Divider
 - **Layout**: Container, Columns, Spacer, Header, Footer
 - **Forms**: Contact, Newsletter, Survey, Lead Capture
 
-**Características técnicas**:
-- @dnd-kit para drag & drop
-- Zustand para state management
+**Technical features**:
+- @dnd-kit for drag & drop
+- Zustand for state management
 - TipTap rich text editor
-- Block registry system extensible
-- Undo/Redo con history management
-- Property panel dinámico
+- Extensible block registry system
+- Undo/Redo with history management
+- Dynamic property panel
 - Responsive breakpoints
 - Export to HTML/React components
 
-**Casos de uso**:
-- Agencias de marketing
-- Freelancers y consultores
-- Startups validando ideas
-- Equipos de producto (landing pages rápidas)
+**Use cases**:
+- Marketing agencies
+- Freelancers and consultants
+- Startups validating ideas
+- Product teams (rapid landing pages)
 - No-code builders
 
 ---
 
-## 🎓 Testimonios (Proyectados)
+## 🎓 Testimonials (Projected)
 
-> "Los ejemplos me ahorraron semanas de setup. En 2 horas tenía un e-commerce funcional."
+> "The examples saved me weeks of setup. In 2 hours I had a functional e-commerce."
 > — Developer, Startup
 
-> "El ejemplo de SaaS Dashboard me enseñó más sobre multi-tenancy que 10 tutoriales."
+> "The SaaS Dashboard example taught me more about multi-tenancy than 10 tutorials."
 > — Senior Dev, Agency
 
-> "Usé el API Gateway example como base para nuestros microservices. Production-ready."
+> "I used the API Gateway example as a base for our microservices. Production-ready."
 > — Tech Lead, Enterprise
 
 ---
 
-**¿Necesitas ayuda?** Consulta la [documentación principal](../README.md) o los [agentes disponibles](../agents/README.md).
+**Need help?** Check the [main documentation](../README.md) or the [available agents](../agents/README.md).
 
-**Próximos ejemplos**: Vota en [GitHub Discussions](https://github.com/tu-usuario/claude-code-advanced-guide/discussions) qué ejemplos quieres ver primero.
+**Next examples**: Vote in [GitHub Discussions](https://github.com/tu-usuario/claude-code-advanced-guide/discussions) for which examples you want to see first.

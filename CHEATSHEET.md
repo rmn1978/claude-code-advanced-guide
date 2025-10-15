@@ -1,56 +1,56 @@
 # 📝 Cheat Sheet - Claude Code
 
-Referencia rápida de comandos, prompts y patrones más usados.
+Quick reference for most commonly used commands, prompts, and patterns.
 
-**💾 Descarga PDF**: [Próximamente]
+**💾 Download PDF**: [Coming soon]
 
 ---
 
-## ⌨️ Comandos Slash
+## ⌨️ Slash Commands
 
 ```
 ┌──────────────────────────────────────────────┐
-│ COMANDO        │ QUÉ HACE                    │
+│ COMMAND        │ WHAT IT DOES                │
 ├──────────────────────────────────────────────┤
-│ /help          │ Muestra ayuda               │
-│ /plan          │ Activa plan mode            │
-│ /clear         │ Limpia la conversación      │
-│ /model         │ Cambia el modelo            │
+│ /help          │ Shows help                  │
+│ /plan          │ Activates plan mode         │
+│ /clear         │ Clears conversation         │
+│ /model         │ Changes model               │
 └──────────────────────────────────────────────┘
 ```
 
 ---
 
-## 💬 Prompts Básicos
+## 💬 Basic Prompts
 
-### Crear Apps
+### Create Apps
 
 ```
-✅ Create a [tipo] app with [features]
+✅ Create a [type] app with [features]
 
-Ejemplos:
+Examples:
 > Create a todo app with React that allows CRUD operations
 > Create a blog with Next.js using SSG
 > Create a REST API with FastAPI for user management
 ```
 
-### Arreglar Errores
+### Fix Errors
 
 ```
-✅ Fix this error: [paste error completo]
+✅ Fix this error: [paste complete error]
 
-Mejor aún:
+Better yet:
 > I'm getting this error in src/api/users.py line 45:
 > [paste error]
 > Fix it
 ```
 
-### Añadir Features
+### Add Features
 
 ```
 ✅ Add [feature] to this [file/component]
 
-Ejemplos:
+Examples:
 > Add authentication to this API
 > Add dark mode to this React component
 > Add pagination to this user list
@@ -59,20 +59,20 @@ Ejemplos:
 ### Refactoring
 
 ```
-✅ Refactor this code to [objetivo]
+✅ Refactor this code to [goal]
 
-Ejemplos:
+Examples:
 > Refactor this code to use async/await
 > Refactor this component to use TypeScript
 > Refactor this function to be more readable
 ```
 
-### Explicaciones
+### Explanations
 
 ```
 ✅ Explain what this code does
 
-Mejor aún:
+Better yet:
 > Explain what this code does line by line
 > Explain the algorithm used in this function
 > Explain why this pattern is used
@@ -80,14 +80,14 @@ Mejor aún:
 
 ---
 
-## 🎯 Prompts Avanzados
+## 🎯 Advanced Prompts
 
-### Usando Agentes
+### Using Agents
 
 ```
 ✅ Use [agent-name] to [task]
 
-Ejemplos:
+Examples:
 > Use nextjs-architect to create a landing page with hero section
 > Use fastapi-architect to create a REST API with JWT auth
 > Use testing-specialist to add comprehensive tests
@@ -97,9 +97,9 @@ Ejemplos:
 
 ```
 ✅ /plan
-✅ [Describe proyecto complejo]
+✅ [Describe complex project]
 
-Ejemplo:
+Example:
 > /plan
 > Create a real-time chat app with:
   - Socket.io for real-time messaging
@@ -112,11 +112,11 @@ Ejemplo:
 ### Multi-step Tasks
 
 ```
-✅ Step 1: [tarea]
-✅ Step 2: [tarea]
-✅ Step 3: [tarea]
+✅ Step 1: [task]
+✅ Step 2: [task]
+✅ Step 3: [task]
 
-Ejemplo:
+Example:
 > Step 1: Create a User model with Prisma
 > Step 2: Create CRUD endpoints for users
 > Step 3: Add JWT authentication
@@ -125,34 +125,34 @@ Ejemplo:
 
 ---
 
-## 🛠️ Patrones de Desarrollo
+## 🛠️ Development Patterns
 
-### Crear un Proyecto Nuevo
+### Create a New Project
 
 ```bash
-# 1. Crear carpeta
+# 1. Create folder
 mkdir my-project && cd my-project
 
-# 2. Inicializar proyecto
+# 2. Initialize project
 > Create a [stack] project with:
   - [framework]
   - [database]
   - [additional tools]
 
-# 3. Verificar estructura
+# 3. Verify structure
 > Show me the project structure
 ```
 
-### Añadir una Feature
+### Add a Feature
 
 ```bash
-# 1. Leer código existente
+# 1. Read existing code
 > Read and understand the current [component/module]
 
-# 2. Planificar
+# 2. Plan
 > How would you add [feature] to this code?
 
-# 3. Implementar
+# 3. Implement
 > Implement [feature] following the existing patterns
 
 # 4. Tests
@@ -162,36 +162,36 @@ mkdir my-project && cd my-project
 ### Debugging
 
 ```bash
-# 1. Mostrar error completo
+# 1. Show complete error
 > I'm getting this error:
-  [paste error con stack trace]
+  [paste error with stack trace]
 
-# 2. Contexto
+# 2. Context
 > In file: src/api/users.py
 > When running: npm run dev
 
-# 3. Pedir solución
+# 3. Ask for solution
 > What's causing this and how do I fix it?
 ```
 
 ---
 
-## 🔧 Settings Comunes
+## 🔧 Common Settings
 
 ### settings.json
 
 ```json
 {
-  // Modelo (elige uno)
-  "claude-code.model": "claude-haiku-3.5",      // Rápido y barato
-  "claude-code.model": "claude-sonnet-4.5",     // Balanceado (recomendado)
-  "claude-code.model": "claude-opus-4",         // Más potente
+  // Model (choose one)
+  "claude-code.model": "claude-haiku-3.5",      // Fast and cheap
+  "claude-code.model": "claude-sonnet-4.5",     // Balanced (recommended)
+  "claude-code.model": "claude-opus-4",         // Most powerful
 
-  // Tokens máximos
-  "claude-code.maxTokens": 8192,                // Por defecto
-  "claude-code.maxTokens": 4096,                // Si es lento
+  // Max tokens
+  "claude-code.maxTokens": 8192,                // Default
+  "claude-code.maxTokens": 4096,                // If slow
 
-  // Herramientas permitidas
+  // Allowed tools
   "claude-code.allowedTools": [
     "Read",
     "Write",
@@ -202,7 +202,7 @@ mkdir my-project && cd my-project
   ],
 
   // Timeout (ms)
-  "claude-code.timeout": 120000,                // 2 minutos
+  "claude-code.timeout": 120000,                // 2 minutes
 
   // Logging
   "claude-code.logLevel": "info"                // info, debug, error
@@ -211,31 +211,31 @@ mkdir my-project && cd my-project
 
 ---
 
-## 📁 Estructura de Proyecto Recomendada
+## 📁 Recommended Project Structure
 
 ```
 my-project/
 ├── .claude/
-│   ├── CLAUDE.md          # ⭐ Project memory (IMPORTANTE)
-│   ├── agents/            # Agentes custom
+│   ├── CLAUDE.md          # ⭐ Project memory (IMPORTANT)
+│   ├── agents/            # Custom agents
 │   └── mcp.json          # MCP servers config
 │
-├── .gitignore            # Git ignore (incluir .env)
+├── .gitignore            # Git ignore (include .env)
 ├── .claudeignore         # Claude ignore
-├── .env                  # Variables de entorno
+├── .env                  # Environment variables
 ├── README.md
 │
-├── src/                  # Código fuente
+├── src/                  # Source code
 ├── tests/                # Tests
-├── docs/                 # Documentación
-└── scripts/              # Scripts útiles
+├── docs/                 # Documentation
+└── scripts/              # Useful scripts
 ```
 
 ---
 
 ## 🚫 .claudeignore
 
-Archivos/carpetas que Claude debe ignorar:
+Files/folders Claude should ignore:
 
 ```
 # Dependencies
@@ -272,21 +272,21 @@ coverage/
 
 ---
 
-## 📄 Template de CLAUDE.md
+## 📄 CLAUDE.md Template
 
 ```markdown
-# [Nombre del Proyecto]
+# [Project Name]
 
-## Descripción
-[Qué hace este proyecto]
+## Description
+[What this project does]
 
-## Stack Tecnológico
+## Technology Stack
 - Frontend: [e.g., Next.js 15, React 18]
 - Backend: [e.g., FastAPI, Python 3.11]
 - Database: [e.g., PostgreSQL 15]
 - Deployment: [e.g., Vercel + Railway]
 
-## Estructura del Proyecto
+## Project Structure
 \`\`\`
 src/
 ├── components/
@@ -294,29 +294,29 @@ src/
 └── lib/
 \`\`\`
 
-## Comandos Importantes
+## Important Commands
 \`\`\`bash
-npm run dev      # Desarrollo
+npm run dev      # Development
 npm test         # Tests
-npm run build    # Build production
+npm run build    # Production build
 \`\`\`
 
-## Decisiones de Arquitectura
-- Por qué elegimos X en lugar de Y
-- Patrones importantes
-- Cosas que NO cambiar
+## Architecture Decisions
+- Why we chose X over Y
+- Important patterns
+- Things NOT to change
 
-## Problemas Conocidos
-- [Lista de issues conocidos]
+## Known Issues
+- [List of known issues]
 
 ## TODOs
-- [ ] Implementar feature X
-- [ ] Arreglar bug Y
+- [ ] Implement feature X
+- [ ] Fix bug Y
 ```
 
 ---
 
-## 🎨 Stacks Populares
+## 🎨 Popular Stacks
 
 ### Next.js Full-Stack
 
@@ -357,12 +357,12 @@ npm run build    # Build production
 
 ## 🧪 Testing Patterns
 
-### Pedir Tests
+### Request Tests
 
 ```
 ✅ Add tests for this [component/function/API]
 
-Mejor:
+Better:
 > Use testing-specialist to add:
   - Unit tests with Jest
   - Integration tests for the API
@@ -385,7 +385,7 @@ Mejor:
 ### Vercel (Frontend)
 
 ```bash
-# Instalar Vercel CLI
+# Install Vercel CLI
 npm i -g vercel
 
 # Deploy
@@ -398,7 +398,7 @@ vercel --prod
 ### Railway (Backend)
 
 ```bash
-# Instalar Railway CLI
+# Install Railway CLI
 npm i -g @railway/cli
 
 # Deploy
@@ -421,18 +421,18 @@ railway up
 ## 💾 Git Quick Commands
 
 ```bash
-# Ver cambios
+# View changes
 git status
 git diff
 
-# Stage y commit
+# Stage and commit
 git add .
 git commit -m "feat: add user authentication"
 
 # Push
 git push origin main
 
-# Crear branch
+# Create branch
 git checkout -b feature/new-feature
 
 # Merge
@@ -442,21 +442,21 @@ git merge feature/new-feature
 
 ---
 
-## 🔐 Seguridad Checklist
+## 🔐 Security Checklist
 
 ```
-✅ No hardcodear secrets (usar .env)
-✅ Añadir .env a .gitignore
-✅ Validar inputs (usar Zod/Pydantic)
-✅ Sanitizar datos de usuario
-✅ Usar HTTPS en producción
-✅ Implementar rate limiting
-✅ Usar JWT con expiration
+✅ Don't hardcode secrets (use .env)
+✅ Add .env to .gitignore
+✅ Validate inputs (use Zod/Pydantic)
+✅ Sanitize user data
+✅ Use HTTPS in production
+✅ Implement rate limiting
+✅ Use JWT with expiration
 ✅ Hash passwords (bcrypt, argon2)
-✅ Configurar CORS correctamente
-✅ Añadir security headers (Helmet)
+✅ Configure CORS correctly
+✅ Add security headers (Helmet)
 
-Pedir a Claude:
+Ask Claude:
 > Use security-specialist to audit this code
 ```
 
@@ -465,114 +465,114 @@ Pedir a Claude:
 ## ⚡ Performance Checklist
 
 ```
-✅ Lazy load componentes
+✅ Lazy load components
 ✅ Code splitting
 ✅ Image optimization
 ✅ Caching (Redis)
 ✅ Database indexes
 ✅ Query optimization
-✅ CDN para static assets
+✅ CDN for static assets
 ✅ Compression (gzip/brotli)
 ✅ Minimize bundle size
 
-Pedir a Claude:
+Ask Claude:
 > Use performance-specialist to optimize this code
 ```
 
 ---
 
-## 🎯 Errores Comunes y Soluciones
+## 🎯 Common Errors and Solutions
 
-| Error | Solución Rápida |
+| Error | Quick Solution |
 |-------|----------------|
-| API key not found | `export ANTHROPIC_API_KEY="sk-ant-xxx"` → Reiniciar VS Code |
+| API key not found | `export ANTHROPIC_API_KEY="sk-ant-xxx"` → Restart VS Code |
 | Permission denied | `chmod +x script.sh` |
-| Module not found | `npm install` o `pip install -r requirements.txt` |
+| Module not found | `npm install` or `pip install -r requirements.txt` |
 | Port already in use | `lsof -ti:3000 \| xargs kill -9` |
-| CORS error | Configurar CORS en backend |
+| CORS error | Configure CORS in backend |
 
 ---
 
-## 📊 Modelos de Claude
+## 📊 Claude Models
 
-| Modelo | Velocidad | Costo | Uso Recomendado |
+| Model | Speed | Cost | Recommended Use |
 |--------|-----------|-------|-----------------|
-| Haiku 3.5 | ⚡⚡⚡ | $ | Tareas simples, iteración rápida |
-| Sonnet 4.5 | ⚡⚡ | $$ | Balanceado (recomendado) |
-| Opus 4 | ⚡ | $$$ | Tareas complejas, mejor calidad |
+| Haiku 3.5 | ⚡⚡⚡ | $ | Simple tasks, rapid iteration |
+| Sonnet 4.5 | ⚡⚡ | $$ | Balanced (recommended) |
+| Opus 4 | ⚡ | $$$ | Complex tasks, best quality |
 
 ---
 
-## 🎓 Recursos Rápidos
+## 🎓 Quick Resources
 
-| Necesito | Ir a |
+| I Need | Go to |
 |----------|------|
-| Instalar Claude Code | [Installation Guide](./docs/01-installation.md) |
-| Tutorial paso a paso | [Tutorial 15 min](./TUTORIAL-15MIN.md) |
-| Términos que no entiendo | [Glosario](./GLOSSARY.md) |
-| Preguntas frecuentes | [FAQ](./FAQ-BEGINNERS.md) |
-| Ejemplos de proyectos | [Examples](./examples/README.md) |
-| Solucionar problemas | [Troubleshooting](./docs/07-troubleshooting.md) |
+| Install Claude Code | [Installation Guide](./docs/01-installation.md) |
+| Step-by-step tutorial | [15-min Tutorial](./TUTORIAL-15MIN.md) |
+| Terms I don't understand | [Glossary](./GLOSSARY.md) |
+| Frequently asked questions | [FAQ](./FAQ-BEGINNERS.md) |
+| Project examples | [Examples](./examples/README.md) |
+| Troubleshoot problems | [Troubleshooting](./docs/07-troubleshooting.md) |
 
 ---
 
 ## 💡 Pro Tips
 
-### 1. Sé Específico
+### 1. Be Specific
 ```
 ❌ "Create an app"
 ✅ "Create a todo app with React, TypeScript, and localStorage"
 ```
 
-### 2. Itera en Pasos Pequeños
+### 2. Iterate in Small Steps
 ```
-✅ Paso 1: Create basic structure
-✅ Paso 2: Add styling
-✅ Paso 3: Add functionality
-✅ Paso 4: Add tests
+✅ Step 1: Create basic structure
+✅ Step 2: Add styling
+✅ Step 3: Add functionality
+✅ Step 4: Add tests
 ```
 
-### 3. Usa Agentes Especializados
+### 3. Use Specialized Agents
 ```
 ✅ Use nextjs-architect for Next.js
 ✅ Use fastapi-architect for Python APIs
 ✅ Use testing-specialist for tests
 ```
 
-### 4. Pide Explicaciones
+### 4. Ask for Explanations
 ```
 ✅ "Explain what this code does"
 ✅ "Why did you choose this approach?"
 ✅ "What are the trade-offs here?"
 ```
 
-### 5. Revisa Siempre el Código
+### 5. Always Review the Code
 ```
-⚠️ Claude es bueno pero no perfecto
-✅ Lee el código generado
-✅ Entiende qué hace
-✅ Ejecuta tests
+⚠️ Claude is good but not perfect
+✅ Read the generated code
+✅ Understand what it does
+✅ Run tests
 ```
 
 ---
 
-## 🚀 Workflow Productivo
+## 🚀 Productive Workflow
 
 ```
-1. 📝 Planifica (5 min)
+1. 📝 Plan (5 min)
    > /plan
-   > [Describe el proyecto]
+   > [Describe the project]
 
-2. 🏗️ Construye (30-60 min)
-   > Implementa siguiendo el plan
-   > Itera en pasos pequeños
+2. 🏗️ Build (30-60 min)
+   > Implement following the plan
+   > Iterate in small steps
 
-3. 🧪 Testea (10-15 min)
+3. 🧪 Test (10-15 min)
    > Add tests
    > Run tests
    > Fix issues
 
-4. 🎨 Refina (10-20 min)
+4. 🎨 Refine (10-20 min)
    > Improve styling
    > Optimize performance
    > Add error handling
@@ -585,18 +585,18 @@ Pedir a Claude:
 
 ---
 
-## 📞 Obtener Ayuda
+## 📞 Get Help
 
 ```
-1. Revisa este cheat sheet
-2. Lee FAQ: ./FAQ-BEGINNERS.md
-3. Revisa Troubleshooting: ./docs/07-troubleshooting.md
-4. Busca en Issues: github.com/rmn1978/claude-code-advanced-guide/issues
-5. Abre nuevo issue si no encuentras solución
+1. Review this cheat sheet
+2. Read FAQ: ./FAQ-BEGINNERS.md
+3. Review Troubleshooting: ./docs/07-troubleshooting.md
+4. Search Issues: github.com/rmn1978/claude-code-advanced-guide/issues
+5. Open new issue if you don't find a solution
 ```
 
 ---
 
-**💾 Guarda este cheat sheet como favorito** - Lo usarás seguido.
+**💾 Save this cheat sheet as a bookmark** - You'll use it often.
 
-[← Volver al README](./README.md)
+[← Back to README](./README.md)

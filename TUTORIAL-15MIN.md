@@ -1,160 +1,160 @@
-# 🚀 Tu Primera App con Claude Code en 15 Minutos
+# 🚀 Your First App with Claude Code in 15 Minutes
 
-Tutorial paso a paso para principiantes. Al final tendrás una app funcionando.
+Step-by-step tutorial for absolute beginners. By the end you'll have a working app.
 
-**⏱️ Tiempo**: 15 minutos
-**📊 Nivel**: Principiante absoluto
-**💻 Requisitos**: VS Code instalado
+**⏱️ Time**: 15 minutes
+**📊 Level**: Absolute beginner
+**💻 Requirements**: VS Code installed
 
 ---
 
-## ✅ Antes de Empezar
+## ✅ Before Starting
 
-### Lo que necesitas
+### What you need
 
-- [ ] VS Code instalado (v1.85+)
-- [ ] Node.js instalado (v18+)
-- [ ] API key de Anthropic
-- [ ] 15 minutos sin interrupciones
+- [ ] VS Code installed (v1.85+)
+- [ ] Node.js installed (v18+)
+- [ ] Anthropic API key
+- [ ] 15 minutes without interruptions
 
-### Verificar que todo está listo
+### Verify everything is ready
 
 ```bash
-# Verificar Node.js
+# Verify Node.js
 node --version
-# Debe mostrar: v18.0.0 o superior
+# Should show: v18.0.0 or higher
 
-# Verificar VS Code
+# Verify VS Code
 code --version
-# Debe mostrar: 1.85.0 o superior
+# Should show: 1.85.0 or higher
 ```
 
-**Si algo falla**: Ve a [Instalación](./docs/01-installation.md)
+**If something fails**: Go to [Installation](./docs/01-installation.md)
 
 ---
 
-## 🎯 Qué Vamos a Construir
+## 🎯 What We're Going to Build
 
-**Proyecto**: Una app web de "Generador de Nombres de Bandas"
+**Project**: A "Band Name Generator" web app
 
-**Funcionalidad**:
-- Usuario ingresa sus palabras favoritas
-- La app genera nombres creativos para bandas
-- Frontend simple con HTML/CSS/JavaScript
+**Functionality**:
+- User enters their favorite words
+- The app generates creative band names
+- Simple frontend with HTML/CSS/JavaScript
 
-**Por qué este proyecto**:
-- ✅ Simple pero divertido
-- ✅ Muestra las capacidades de Claude
-- ✅ Funciona en el navegador
-- ✅ No requiere base de datos ni backend complejo
-
----
-
-## 📋 Paso 1: Instalar Claude Code (3 minutos)
-
-### 1.1 - Abrir VS Code
-
-Abre Visual Studio Code.
-
-### 1.2 - Instalar la Extensión
-
-1. Haz clic en el ícono de **Extensions** (cuadrado con piezas de puzzle)
-2. Busca: `Claude Code`
-3. Haz clic en **Install** en la extensión de Anthropic
-
-**Espera 30-60 segundos** mientras se instala.
-
-### 1.3 - Verificar Instalación
-
-Deberías ver:
-- ✅ Un ícono de Claude en la barra lateral izquierda
-- ✅ Un panel nuevo llamado "Claude Code"
-
-**Si NO lo ves**: Reinicia VS Code y vuelve a revisar.
+**Why this project**:
+- ✅ Simple but fun
+- ✅ Shows Claude's capabilities
+- ✅ Works in the browser
+- ✅ Doesn't require database or complex backend
 
 ---
 
-## 🔑 Paso 2: Configurar API Key (2 minutos)
+## 📋 Step 1: Install Claude Code (3 minutes)
 
-### 2.1 - Conseguir tu API Key
+### 1.1 - Open VS Code
 
-1. Ve a: https://console.anthropic.com/
-2. Inicia sesión o crea una cuenta
-3. Ve a **"API Keys"**
-4. Haz clic en **"Create Key"**
-5. **Copia** tu API key (empieza con `sk-ant-`)
+Open Visual Studio Code.
 
-⚠️ **IMPORTANTE**: Guarda esta key en lugar seguro. La necesitarás.
+### 1.2 - Install the Extension
 
-### 2.2 - Configurar la Key en tu Terminal
+1. Click on the **Extensions** icon (square with puzzle pieces)
+2. Search: `Claude Code`
+3. Click **Install** on Anthropic's extension
+
+**Wait 30-60 seconds** while it installs.
+
+### 1.3 - Verify Installation
+
+You should see:
+- ✅ A Claude icon in the left sidebar
+- ✅ A new panel called "Claude Code"
+
+**If you DON'T see it**: Restart VS Code and check again.
+
+---
+
+## 🔑 Step 2: Configure API Key (2 minutes)
+
+### 2.1 - Get your API Key
+
+1. Go to: https://console.anthropic.com/
+2. Log in or create an account
+3. Go to **"API Keys"**
+4. Click **"Create Key"**
+5. **Copy** your API key (starts with `sk-ant-`)
+
+⚠️ **IMPORTANT**: Save this key in a safe place. You'll need it.
+
+### 2.2 - Configure the Key in your Terminal
 
 **Mac/Linux**:
 ```bash
-# Abre tu terminal
-# Pega este comando (reemplaza xxx con tu key):
+# Open your terminal
+# Paste this command (replace xxx with your key):
 export ANTHROPIC_API_KEY="sk-ant-xxxxx"
 
-# Verifica que funcionó:
+# Verify it worked:
 echo $ANTHROPIC_API_KEY
-# Debe mostrar tu key
+# Should show your key
 ```
 
 **Windows (PowerShell)**:
 ```powershell
-# Abre PowerShell
-# Pega este comando (reemplaza xxx con tu key):
+# Open PowerShell
+# Paste this command (replace xxx with your key):
 $env:ANTHROPIC_API_KEY="sk-ant-xxxxx"
 
-# Verifica que funcionó:
+# Verify it worked:
 echo $env:ANTHROPIC_API_KEY
-# Debe mostrar tu key
+# Should show your key
 ```
 
-### 2.3 - Reiniciar VS Code
+### 2.3 - Restart VS Code
 
-**MUY IMPORTANTE**: Cierra VS Code COMPLETAMENTE y vuélvelo a abrir.
+**VERY IMPORTANT**: Close VS Code COMPLETELY and reopen it.
 
-Esto asegura que VS Code vea la nueva variable de entorno.
+This ensures VS Code sees the new environment variable.
 
 ---
 
-## 💬 Paso 3: Primera Interacción con Claude (2 minutos)
+## 💬 Step 3: First Interaction with Claude (2 minutes)
 
-### 3.1 - Abrir Claude Code
+### 3.1 - Open Claude Code
 
-1. Haz clic en el ícono de **Claude** en la barra lateral izquierda
-2. Deberías ver un panel con un chat
+1. Click on the **Claude** icon in the left sidebar
+2. You should see a panel with a chat
 
-### 3.2 - Test Rápido
+### 3.2 - Quick Test
 
-Escribe en el chat:
+Type in the chat:
 
 ```
 Hello! Can you see this?
 ```
 
-**Respuesta esperada**: Claude debería responder algo como "Yes, I can see your message!"
+**Expected response**: Claude should respond something like "Yes, I can see your message!"
 
-**Si ves un error**: Revisa que la API key esté configurada correctamente (Paso 2).
+**If you see an error**: Check that the API key is configured correctly (Step 2).
 
 ---
 
-## 🏗️ Paso 4: Crear el Proyecto (5 minutos)
+## 🏗️ Step 4: Create the Project (5 minutes)
 
-### 4.1 - Crear Carpeta de Proyecto
+### 4.1 - Create Project Folder
 
 ```bash
-# En tu terminal
+# In your terminal
 mkdir band-name-generator
 cd band-name-generator
 
-# Abrir VS Code en esta carpeta
+# Open VS Code in this folder
 code .
 ```
 
-### 4.2 - Pedir a Claude que Cree la App
+### 4.2 - Ask Claude to Create the App
 
-**Abre Claude Code** (ícono en la barra lateral) y pega este prompt:
+**Open Claude Code** (icon in the sidebar) and paste this prompt:
 
 ```
 Create a Band Name Generator web app with the following requirements:
@@ -169,18 +169,18 @@ Create a Band Name Generator web app with the following requirements:
 The file should be called index.html and be ready to open in a browser.
 ```
 
-### 4.3 - Esperar a que Claude Cree el Archivo
+### 4.3 - Wait for Claude to Create the File
 
-Claude debería:
-1. Crear un archivo `index.html`
-2. Escribir todo el código HTML, CSS y JavaScript
-3. Mostrarte el código
+Claude should:
+1. Create an `index.html` file
+2. Write all the HTML, CSS and JavaScript code
+3. Show you the code
 
-**Tiempo**: 30-60 segundos
+**Time**: 30-60 seconds
 
-### 4.4 - Verificar que el Archivo Existe
+### 4.4 - Verify the File Exists
 
-En VS Code, deberías ver:
+In VS Code, you should see:
 ```
 band-name-generator/
 └── index.html
@@ -188,115 +188,115 @@ band-name-generator/
 
 ---
 
-## 🎨 Paso 5: Probar la App (2 minutos)
+## 🎨 Step 5: Test the App (2 minutes)
 
-### 5.1 - Abrir en el Navegador
+### 5.1 - Open in Browser
 
-**Opción 1 - Doble clic**:
-- Ve a tu carpeta `band-name-generator`
-- Doble clic en `index.html`
-- Se abre en tu navegador
+**Option 1 - Double click**:
+- Go to your `band-name-generator` folder
+- Double click on `index.html`
+- Opens in your browser
 
-**Opción 2 - VS Code Extension** (recomendado):
-1. Instala la extensión "Live Server" en VS Code
-2. Click derecho en `index.html`
-3. Click en "Open with Live Server"
+**Option 2 - VS Code Extension** (recommended):
+1. Install the "Live Server" extension in VS Code
+2. Right click on `index.html`
+3. Click on "Open with Live Server"
 
-### 5.2 - Probar la App
+### 5.2 - Test the App
 
-1. Ingresa 2-3 palabras (ej: "Fire", "Dragon", "Night")
-2. Haz clic en "Generate Band Names"
-3. Deberías ver 5 nombres de bandas generados
+1. Enter 2-3 words (e.g., "Fire", "Dragon", "Night")
+2. Click on "Generate Band Names"
+3. You should see 5 generated band names
 
-**Ejemplos de nombres generados**:
+**Examples of generated names**:
 - "Firedrake Nights"
 - "Dragon's Inferno"
 - "Nightfire Chronicles"
 - etc.
 
-**Si funciona**: ¡Felicidades! 🎉 Acabas de crear tu primera app con Claude Code.
+**If it works**: Congratulations! 🎉 You just created your first app with Claude Code.
 
 ---
 
-## 🔧 Paso 6: Personalizar la App (3 minutos)
+## 🔧 Step 6: Customize the App (3 minutes)
 
-Ahora vamos a hacer cambios para que veas cómo Claude te ayuda a iterar.
+Now let's make changes so you can see how Claude helps you iterate.
 
-### 6.1 - Cambiar el Color
+### 6.1 - Change the Color
 
-Pídele a Claude:
+Ask Claude:
 
 ```
 Change the color scheme to dark mode with purple and blue gradients
 ```
 
-Claude debería:
-1. Actualizar el archivo `index.html`
-2. Cambiar los colores CSS
-3. Mostrarte qué cambió
+Claude should:
+1. Update the `index.html` file
+2. Change the CSS colors
+3. Show you what changed
 
-### 6.2 - Añadir Más Features
+### 6.2 - Add More Features
 
-Pídele a Claude:
+Ask Claude:
 
 ```
 Add a "Copy to Clipboard" button next to each generated band name
 ```
 
-Claude debería:
-1. Añadir botones de copiar
-2. Implementar la funcionalidad de JavaScript
-3. Actualizar el HTML
+Claude should:
+1. Add copy buttons
+2. Implement the JavaScript functionality
+3. Update the HTML
 
-### 6.3 - Probar los Cambios
+### 6.3 - Test the Changes
 
-Recarga la página en tu navegador (F5) y prueba:
-- ¿Cambió el color scheme?
-- ¿Aparecen los botones de "Copy"?
-- ¿Funcionan al hacer clic?
-
----
-
-## 🎓 Paso 7: Entender Qué Pasó (2 minutos)
-
-### Lo que Acabas de Hacer
-
-1. ✅ Instalaste Claude Code
-2. ✅ Configuraste tu API key
-3. ✅ Le pediste a Claude que creara una app
-4. ✅ Claude escribió TODO el código por ti
-5. ✅ Probaste la app
-6. ✅ Le pediste cambios y Claude los hizo
-
-### Lo Poderoso de Esto
-
-**Antes** (sin Claude Code):
-```
-1. Buscar tutorial en Google
-2. Copiar/pegar código de StackOverflow
-3. Depurar errores
-4. Buscar más tutoriales
-5. Más errores
-6. 2-3 horas después: funciona
-```
-
-**Ahora** (con Claude Code):
-```
-1. Describir lo que quieres
-2. Claude lo crea
-3. Funciona
-4. 5-10 minutos
-```
-
-**Reducción de tiempo**: ~90-95% ⚡
+Reload the page in your browser (F5) and test:
+- Did the color scheme change?
+- Do the "Copy" buttons appear?
+- Do they work when clicked?
 
 ---
 
-## 🎯 Próximos Pasos
+## 🎓 Step 7: Understand What Happened (2 minutes)
 
-### ¿Qué Hacer Ahora?
+### What You Just Did
 
-**Opción 1 - Experimenta con esta app**:
+1. ✅ Installed Claude Code
+2. ✅ Configured your API key
+3. ✅ Asked Claude to create an app
+4. ✅ Claude wrote ALL the code for you
+5. ✅ Tested the app
+6. ✅ Asked for changes and Claude made them
+
+### The Power of This
+
+**Before** (without Claude Code):
+```
+1. Search for tutorial on Google
+2. Copy/paste code from StackOverflow
+3. Debug errors
+4. Search for more tutorials
+5. More errors
+6. 2-3 hours later: it works
+```
+
+**Now** (with Claude Code):
+```
+1. Describe what you want
+2. Claude creates it
+3. It works
+4. 5-10 minutes
+```
+
+**Time reduction**: ~90-95% ⚡
+
+---
+
+## 🎯 Next Steps
+
+### What to Do Now?
+
+**Option 1 - Experiment with this app**:
 ```
 > Add a "Favorites" section where users can save their favorite names
 
@@ -307,29 +307,29 @@ Recarga la página en tu navegador (F5) y prueba:
 > Make it responsive for mobile devices
 ```
 
-**Opción 2 - Construye otra app**:
-- Calculadora
-- Conversor de unidades
-- Lista de tareas (Todo app)
-- Generador de contraseñas
+**Option 2 - Build another app**:
+- Calculator
+- Unit converter
+- Todo list (Todo app)
+- Password generator
 
-**Opción 3 - Aprende más**:
-- Lee el [Cheat Sheet](./CHEATSHEET.md) para prompts comunes
-- Revisa [ejemplos más complejos](./examples/README.md)
-- Lee [Best Practices](./docs/06-best-practices.md)
+**Option 3 - Learn more**:
+- Read the [Cheat Sheet](./CHEATSHEET.md) for common prompts
+- Review [more complex examples](./examples/README.md)
+- Read [Best Practices](./docs/06-best-practices.md)
 
 ---
 
-## 💡 Tips y Trucos
+## 💡 Tips and Tricks
 
-### Cómo Hacer Buenos Prompts
+### How to Write Good Prompts
 
-❌ **Malo**:
+❌ **Bad**:
 ```
 Create an app
 ```
 
-✅ **Bueno**:
+✅ **Good**:
 ```
 Create a weather app that:
 - Shows current temperature
@@ -339,101 +339,101 @@ Create a weather app that:
 - Responsive design
 ```
 
-### Si Algo No Funciona
+### If Something Doesn't Work
 
-1. **Lee el error**: Claude a veces explica qué falló
-2. **Sé específico**: "Fix the error in line 45"
-3. **Itera**: Pide pequeños cambios, no reescribir todo
-4. **Pide explicaciones**: "Explain what this code does"
+1. **Read the error**: Claude sometimes explains what failed
+2. **Be specific**: "Fix the error in line 45"
+3. **Iterate**: Ask for small changes, not rewriting everything
+4. **Ask for explanations**: "Explain what this code does"
 
-### Comandos Útiles de Claude
+### Useful Claude Commands
 
 ```bash
-/help    # Ver ayuda
-/plan    # Claude planifica antes de codificar
-/clear   # Limpiar el chat
+/help    # Show help
+/plan    # Claude plans before coding
+/clear   # Clear chat
 ```
 
 ---
 
-## ❓ Problemas Comunes
+## ❓ Common Problems
 
 ### "API key not found"
 
-**Solución**:
-1. Verifica que la configuraste: `echo $ANTHROPIC_API_KEY`
-2. Reinicia VS Code COMPLETAMENTE
-3. Vuelve a configurarla si es necesario
+**Solution**:
+1. Verify you configured it: `echo $ANTHROPIC_API_KEY`
+2. Restart VS Code COMPLETELY
+3. Reconfigure if necessary
 
-### Claude es muy lento
+### Claude is very slow
 
-**Solución**:
-1. Cambia a un modelo más rápido (haiku):
+**Solution**:
+1. Switch to a faster model (haiku):
    - Settings → Claude Code → Model → `claude-haiku-3.5`
 
-### El código no funciona
+### The code doesn't work
 
-**Solución**:
-1. Pídele a Claude que lo arregle:
+**Solution**:
+1. Ask Claude to fix it:
    ```
    This gives an error: [paste error]
    Fix it
    ```
 
-### No sé qué construir
+### I don't know what to build
 
-**Ideas simples para practicar**:
-- Calculadora de propinas
-- Conversor de temperatura
-- Generador de colores aleatorios
-- Cronómetro/Temporizador
-- Lista de compras
-
----
-
-## 🎉 ¡Lo Lograste!
-
-**Has completado el tutorial**. Ahora sabes:
-
-- ✅ Cómo instalar y configurar Claude Code
-- ✅ Cómo pedirle a Claude que cree apps
-- ✅ Cómo hacer cambios iterativos
-- ✅ Cómo probar tus creaciones
-
-**Tiempo total**: ~15 minutos
-**Apps creadas**: 1
-**Conocimiento adquirido**: Invaluable
+**Simple ideas for practice**:
+- Tip calculator
+- Temperature converter
+- Random color generator
+- Stopwatch/Timer
+- Shopping list
 
 ---
 
-## 📚 Recursos Adicionales
+## 🎉 You Did It!
 
-**Siguientes pasos**:
-- **[FAQ](./FAQ-BEGINNERS.md)** - Preguntas frecuentes
-- **[Glosario](./GLOSSARY.md)** - Términos explicados
-- **[Cheat Sheet](./CHEATSHEET.md)** - Comandos rápidos
-- **[Ejemplos](./examples/README.md)** - Proyectos más complejos
+**You've completed the tutorial**. Now you know:
 
-**¿Necesitas ayuda?**
-- [Abre un Issue](https://github.com/rmn1978/claude-code-advanced-guide/issues)
+- ✅ How to install and configure Claude Code
+- ✅ How to ask Claude to create apps
+- ✅ How to make iterative changes
+- ✅ How to test your creations
+
+**Total time**: ~15 minutes
+**Apps created**: 1
+**Knowledge gained**: Invaluable
+
+---
+
+## 📚 Additional Resources
+
+**Next steps**:
+- **[FAQ](./FAQ-BEGINNERS.md)** - Frequently asked questions
+- **[Glossary](./GLOSSARY.md)** - Terms explained
+- **[Cheat Sheet](./CHEATSHEET.md)** - Quick commands
+- **[Examples](./examples/README.md)** - More complex projects
+
+**Need help?**
+- [Open an Issue](https://github.com/rmn1978/claude-code-advanced-guide/issues)
 - [GitHub Discussions](https://github.com/rmn1978/claude-code-advanced-guide/discussions)
 
 ---
 
-## 🚀 Desafío
+## 🚀 Challenge
 
-**Ahora que sabes lo básico, desafíate**:
+**Now that you know the basics, challenge yourself**:
 
-Crea una de estas apps (30-60 minutos cada una):
-1. **Calculadora de IMC** (Índice de Masa Corporal)
-2. **Generador de Memes** (texto sobre imagen)
-3. **Quiz interactivo** (5 preguntas con puntuación)
-4. **Reloj mundial** (muestra hora en diferentes ciudades)
+Create one of these apps (30-60 minutes each):
+1. **BMI Calculator** (Body Mass Index)
+2. **Meme Generator** (text on image)
+3. **Interactive Quiz** (5 questions with scoring)
+4. **World Clock** (shows time in different cities)
 
-**Comparte tu creación**: Tweet con #ClaudeCode y tag a @learntouseai
+**Share your creation**: Tweet with #ClaudeCode and tag @learntouseai
 
 ---
 
-**¡Feliz Coding!** 💻✨
+**Happy Coding!** 💻✨
 
-[← Volver al README](./README.md)
+[← Back to README](./README.md)

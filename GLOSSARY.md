@@ -1,129 +1,129 @@
-# 📖 Glosario de Términos - Claude Code
+# 📖 Glossary of Terms - Claude Code
 
-Definiciones simples de todos los términos que encontrarás en esta guía.
+Simple definitions of all the terms you'll find in this guide.
 
 ---
 
 ## A
 
-### Agent (Agente)
-**Qué es**: Un "trabajador especializado" que sabe hacer tareas específicas muy bien.
+### Agent
+**What it is**: A "specialized worker" that knows how to do specific tasks very well.
 
-**Ejemplo**: El agente `nextjs-architect` sabe crear aplicaciones Next.js. El agente `fastapi-architect` sabe crear APIs con FastAPI.
+**Example**: The `nextjs-architect` agent knows how to create Next.js applications. The `fastapi-architect` agent knows how to create APIs with FastAPI.
 
-**Analogía**: Como tener un equipo de expertos. En lugar de un desarrollador general, tienes un experto en React, otro en Python, otro en bases de datos, etc.
+**Analogy**: Like having a team of experts. Instead of a general developer, you have an expert in React, another in Python, another in databases, etc.
 
-**Cómo usarlo**:
+**How to use it**:
 ```
 > Use nextjs-architect to create a blog with SSG
 ```
 
 ### API (Application Programming Interface)
-**Qué es**: Un "intermediario" que permite que dos programas se comuniquen.
+**What it is**: An "intermediary" that allows two programs to communicate.
 
-**Ejemplo simple**: Cuando usas una app del clima, la app usa una API para pedirle los datos al servidor del clima.
+**Simple example**: When you use a weather app, the app uses an API to request data from the weather server.
 
-**En este repo**: Muchos ejemplos crean APIs (FastAPI, Express, Django).
+**In this repo**: Many examples create APIs (FastAPI, Express, Django).
 
 ### API Key
-**Qué es**: Tu "contraseña" para usar Claude Code. Es como una llave que te identifica.
+**What it is**: Your "password" to use Claude Code. It's like a key that identifies you.
 
-**Dónde conseguirla**: https://console.anthropic.com/
+**Where to get it**: https://console.anthropic.com/
 
-**Formato**: Empieza con `sk-ant-` seguido de letras y números.
+**Format**: Starts with `sk-ant-` followed by letters and numbers.
 
-**⚠️ Importante**: NUNCA compartas tu API key. Es como tu contraseña de banco.
+**⚠️ Important**: NEVER share your API key. It's like your bank password.
 
 ---
 
 ## B
 
 ### Backend
-**Qué es**: La parte del software que NO ves. Es el "cerebro" que procesa datos.
+**What it is**: The part of the software you DON'T see. It's the "brain" that processes data.
 
-**Ejemplo**: Cuando te logueas en Facebook:
-- Frontend: El formulario que ves
-- Backend: El servidor que verifica tu contraseña
+**Example**: When you log in to Facebook:
+- Frontend: The form you see
+- Backend: The server that verifies your password
 
-**Tecnologías backend en este repo**: FastAPI, Django, Express
+**Backend technologies in this repo**: FastAPI, Django, Express
 
 ### Bash
-**Qué es**: El lenguaje de la terminal (línea de comandos).
+**What it is**: The language of the terminal (command line).
 
-**Ejemplo de comando**:
+**Command example**:
 ```bash
-npm install  # Instalar dependencias
+npm install  # Install dependencies
 ```
 
-**En Claude Code**: Claude puede ejecutar comandos bash por ti.
+**In Claude Code**: Claude can execute bash commands for you.
 
 ---
 
 ## C
 
 ### CLI (Command Line Interface)
-**Qué es**: Programas que usas escribiendo comandos en la terminal.
+**What it is**: Programs you use by writing commands in the terminal.
 
-**Ejemplo**: En lugar de hacer clic en botones, escribes:
+**Example**: Instead of clicking buttons, you write:
 ```bash
 git status
 npm run dev
 ```
 
 ### CRUD
-**Qué es**: Las 4 operaciones básicas con datos:
-- **C**reate (Crear)
-- **R**ead (Leer)
-- **U**pdate (Actualizar)
-- **D**elete (Eliminar)
+**What it is**: The 4 basic operations with data:
+- **C**reate
+- **R**ead
+- **U**pdate
+- **D**elete
 
-**Ejemplo**: En una app de notas:
-- Create: Crear una nota nueva
-- Read: Ver tus notas
-- Update: Editar una nota
-- Delete: Borrar una nota
+**Example**: In a notes app:
+- Create: Create a new note
+- Read: View your notes
+- Update: Edit a note
+- Delete: Delete a note
 
 ---
 
 ## D
 
-### Database (Base de Datos)
-**Qué es**: Donde se guardan los datos de forma organizada.
+### Database
+**What it is**: Where data is stored in an organized way.
 
-**Analogía**: Como un Excel gigante y super organizado.
+**Analogy**: Like a giant, super-organized Excel spreadsheet.
 
-**Tipos**:
-- **PostgreSQL**: Base de datos relacional (tablas con relaciones)
-- **Redis**: Base de datos en memoria (super rápida)
-- **MongoDB**: Base de datos de documentos
+**Types**:
+- **PostgreSQL**: Relational database (tables with relationships)
+- **Redis**: In-memory database (super fast)
+- **MongoDB**: Document database
 
 ### Docker
-**Qué es**: Software que "empaqueta" tu aplicación con todo lo que necesita.
+**What it is**: Software that "packages" your application with everything it needs.
 
-**Analogía**: Como una caja de mudanza que tiene TODO (muebles, ropa, decoración). La puedes abrir en cualquier casa y todo funciona.
+**Analogy**: Like a moving box that has EVERYTHING (furniture, clothes, decoration). You can open it in any house and everything works.
 
-**Uso**: Te aseguras de que tu app funcione igual en tu laptop, en el servidor, en cualquier lado.
+**Use**: Ensures your app works the same on your laptop, on the server, anywhere.
 
 ---
 
 ## E
 
 ### Endpoint
-**Qué es**: Una "dirección" en tu API donde puedes hacer peticiones.
+**What it is**: An "address" in your API where you can make requests.
 
-**Ejemplo**:
+**Example**:
 ```
-GET  /api/users      ← Obtener todos los usuarios
-POST /api/users      ← Crear un usuario nuevo
-GET  /api/users/123  ← Obtener el usuario con ID 123
+GET  /api/users      ← Get all users
+POST /api/users      ← Create a new user
+GET  /api/users/123  ← Get user with ID 123
 ```
 
-### Environment Variable (Variable de Entorno)
-**Qué es**: Una configuración que se guarda fuera de tu código.
+### Environment Variable
+**What it is**: A configuration stored outside your code.
 
-**Por qué**: Para NO poner contraseñas en el código.
+**Why**: To NOT put passwords in the code.
 
-**Ejemplo**:
+**Example**:
 ```bash
 # .env file
 DATABASE_URL=postgresql://localhost/mydb
@@ -135,15 +135,15 @@ API_KEY=sk-ant-xxxxx
 ## F
 
 ### FastAPI
-**Qué es**: Framework de Python para crear APIs muy rápidas.
+**What it is**: Python framework for creating very fast APIs.
 
-**Características**:
-- Súper rápido
-- Fácil de aprender
-- Documentación automática
-- Async (puede hacer varias cosas a la vez)
+**Features**:
+- Super fast
+- Easy to learn
+- Automatic documentation
+- Async (can do multiple things at once)
 
-**Ejemplo**:
+**Example**:
 ```python
 from fastapi import FastAPI
 app = FastAPI()
@@ -154,95 +154,95 @@ def read_root():
 ```
 
 ### Frontend
-**Qué es**: La parte del software que SÍ ves. La interfaz con la que interactúas.
+**What it is**: The part of the software you DO see. The interface you interact with.
 
-**Ejemplo**: Los botones, formularios, texto que ves en una web o app.
+**Example**: The buttons, forms, text you see on a website or app.
 
-**Tecnologías frontend en este repo**: Next.js, React, Vue, Nuxt
+**Frontend technologies in this repo**: Next.js, React, Vue, Nuxt
 
 ---
 
 ## G
 
 ### Git
-**Qué es**: Sistema para guardar el historial de cambios de tu código.
+**What it is**: System for saving the history of changes to your code.
 
-**Analogía**: Como "Control + Z" ultra poderoso. Puedes volver a cualquier versión anterior de tu código.
+**Analogy**: Like ultra-powerful "Control + Z". You can go back to any previous version of your code.
 
-**Comandos básicos**:
+**Basic commands**:
 ```bash
-git status   # Ver qué cambió
-git add .    # Preparar cambios
-git commit   # Guardar cambios
-git push     # Subir a GitHub
+git status   # See what changed
+git add .    # Stage changes
+git commit   # Save changes
+git push     # Upload to GitHub
 ```
 
 ### GitHub
-**Qué es**: Sitio web donde puedes guardar tu código en la nube (con Git).
+**What it is**: Website where you can save your code in the cloud (with Git).
 
-**Uso**: Compartir código, colaborar, hacer backup.
+**Use**: Share code, collaborate, make backups.
 
 ---
 
 ## H
 
 ### HTTP/HTTPS
-**Qué es**: El protocolo (lenguaje) que usa la web para comunicarse.
+**What it is**: The protocol (language) the web uses to communicate.
 
-**Métodos comunes**:
-- **GET**: Obtener datos
-- **POST**: Enviar datos nuevos
-- **PUT**: Actualizar datos
-- **DELETE**: Borrar datos
+**Common methods**:
+- **GET**: Get data
+- **POST**: Send new data
+- **PUT**: Update data
+- **DELETE**: Delete data
 
 ---
 
 ## J
 
 ### JSON
-**Qué es**: Formato para intercambiar datos entre programas.
+**What it is**: Format for exchanging data between programs.
 
-**Ejemplo**:
+**Example**:
 ```json
 {
-  "nombre": "Juan",
-  "edad": 30,
-  "ciudad": "Madrid"
+  "name": "John",
+  "age": 30,
+  "city": "Madrid"
 }
 ```
 
-**Por qué es útil**: Es fácil de leer para humanos y para máquinas.
+**Why it's useful**: It's easy to read for both humans and machines.
 
 ### JWT (JSON Web Token)
-**Qué es**: Un "ticket" que prueba quién eres sin tener que loguearte cada vez.
+**What it is**: A "ticket" that proves who you are without having to log in every time.
 
-**Analogía**: Como un pase VIP. Lo muestras y ya saben quién eres.
+**Analogy**: Like a VIP pass. You show it and they already know who you are.
 
-**Uso**: Autenticación en APIs.
+**Use**: Authentication in APIs.
 
 ---
 
 ## M
 
 ### MCP (Model Context Protocol)
-**Qué es**: Sistema que permite a Claude Code conectarse con servicios externos.
+**What it is**: System that allows Claude Code to connect with external services.
 
-**Ejemplo**: Con MCP puedes conectar Claude Code a:
-- Tu base de datos PostgreSQL
-- Tu cuenta de GitHub
-- Stripe (pagos)
+**Example**: With MCP you can connect Claude Code to:
+- Your PostgreSQL database
+- Your GitHub account
+- Stripe (payments)
 - Slack
 
-**Beneficio**: Claude puede hacer cosas como "leer datos de la BD" directamente.
+**Benefit**: Claude can do things like "read data from the DB" directly.
 
 ### Middleware
-**Qué es**: Código que se ejecuta "en el medio" de una petición.
+**What it is**: Code that runs "in the middle" of a request.
 
-**Ejemplo**: Verificar que estás logueado ANTES de mostrarte tus mensajes privados.
+**Example**: Verify you're logged in BEFORE showing you your private messages.
 
 ```
-Petición → Middleware (¿está logueado?) → Si SÍ → Mostrar datos
-                                        → Si NO → Error 401
+Request → Middleware (logged in?) → If YES → Show data
+                                  → If NO → Error 401
 ```
 
 ---
@@ -250,130 +250,130 @@ Petición → Middleware (¿está logueado?) → Si SÍ → Mostrar datos
 ## N
 
 ### Next.js
-**Qué es**: Framework de React para crear aplicaciones web modernas.
+**What it is**: React framework for creating modern web applications.
 
-**Características**:
+**Features**:
 - SSR (Server Side Rendering)
 - SSG (Static Site Generation)
 - File-based routing
-- Super rápido
+- Super fast
 
-**Uso en este repo**: Varios ejemplos usan Next.js (blog, e-commerce, chat, etc.)
+**Use in this repo**: Several examples use Next.js (blog, e-commerce, chat, etc.)
 
 ### npm (Node Package Manager)
-**Qué es**: Herramienta para instalar librerías de JavaScript.
+**What it is**: Tool for installing JavaScript libraries.
 
-**Comandos comunes**:
+**Common commands**:
 ```bash
-npm install          # Instalar dependencias
-npm run dev          # Iniciar desarrollo
-npm test             # Correr tests
+npm install          # Install dependencies
+npm run dev          # Start development
+npm test             # Run tests
 ```
 
 ### Nuxt
-**Qué es**: Framework de Vue (similar a Next.js pero para Vue).
+**What it is**: Vue framework (similar to Next.js but for Vue).
 
 ---
 
 ## O
 
 ### ORM (Object-Relational Mapping)
-**Qué es**: Herramienta que te permite usar la base de datos con código normal en lugar de SQL.
+**What it is**: Tool that lets you use the database with normal code instead of SQL.
 
-**Sin ORM** (SQL directo):
+**Without ORM** (direct SQL):
 ```sql
 SELECT * FROM users WHERE id = 1
 ```
 
-**Con ORM** (Prisma):
+**With ORM** (Prisma):
 ```javascript
 await prisma.user.findUnique({ where: { id: 1 } })
 ```
 
-**Beneficio**: Más fácil, más seguro, menos errores.
+**Benefit**: Easier, safer, fewer errors.
 
 ---
 
 ## P
 
 ### Plan Mode
-**Qué es**: Modo de Claude Code donde primero PLANIFICA antes de codificar.
+**What it is**: Claude Code mode where it PLANS first before coding.
 
-**Cómo activarlo**:
+**How to activate**:
 ```
 > /plan
 ```
 
-**Beneficio**: Para proyectos complejos, Claude piensa toda la arquitectura antes de escribir código.
+**Benefit**: For complex projects, Claude thinks through the entire architecture before writing code.
 
-**Flujo**:
-1. Tú pides algo complejo
-2. Claude crea un plan detallado
-3. Tú apruebas el plan
-4. Claude ejecuta el plan paso a paso
+**Flow**:
+1. You ask for something complex
+2. Claude creates a detailed plan
+3. You approve the plan
+4. Claude executes the plan step by step
 
 ### Prisma
-**Qué es**: ORM moderno para Node.js.
+**What it is**: Modern ORM for Node.js.
 
-**Uso**: Trabajar con bases de datos de forma fácil.
+**Use**: Work with databases easily.
 
-**Características**:
-- Type-safe (previene errores)
-- Migraciones automáticas
-- Prisma Studio (UI visual)
+**Features**:
+- Type-safe (prevents errors)
+- Automatic migrations
+- Prisma Studio (visual UI)
 
 ---
 
 ## R
 
 ### REST API
-**Qué es**: Estilo de arquitectura para crear APIs.
+**What it is**: Architecture style for creating APIs.
 
-**Principios**:
-- Usar HTTP methods (GET, POST, PUT, DELETE)
-- Endpoints claros (`/users`, `/posts`)
-- Stateless (cada petición es independiente)
+**Principles**:
+- Use HTTP methods (GET, POST, PUT, DELETE)
+- Clear endpoints (`/users`, `/posts`)
+- Stateless (each request is independent)
 
-**Ejemplo**:
+**Example**:
 ```
-GET    /api/posts     ← Obtener todos los posts
-POST   /api/posts     ← Crear un post
-GET    /api/posts/5   ← Obtener el post 5
-PUT    /api/posts/5   ← Actualizar el post 5
-DELETE /api/posts/5   ← Borrar el post 5
+GET    /api/posts     ← Get all posts
+POST   /api/posts     ← Create a post
+GET    /api/posts/5   ← Get post 5
+PUT    /api/posts/5   ← Update post 5
+DELETE /api/posts/5   ← Delete post 5
 ```
 
 ### Redis
-**Qué es**: Base de datos super rápida que guarda datos en memoria RAM.
+**What it is**: Super fast database that stores data in RAM memory.
 
-**Uso**: Caché, sesiones, colas de trabajos, pub/sub.
+**Use**: Cache, sessions, job queues, pub/sub.
 
-**Por qué es rápida**: Todo está en RAM (no en disco).
+**Why it's fast**: Everything is in RAM (not on disk).
 
 ---
 
 ## S
 
 ### SSG (Static Site Generation)
-**Qué es**: Generar páginas HTML en tiempo de BUILD (no en cada petición).
+**What it is**: Generate HTML pages at BUILD time (not on each request).
 
-**Beneficio**: Super rápido porque las páginas ya están listas.
+**Benefit**: Super fast because the pages are already ready.
 
-**Uso**: Blogs, documentación, sitios que no cambian mucho.
+**Use**: Blogs, documentation, sites that don't change much.
 
 ### SSR (Server Side Rendering)
-**Qué es**: Generar el HTML en el SERVIDOR en cada petición.
+**What it is**: Generate the HTML on the SERVER on each request.
 
-**Beneficio**: Contenido dinámico, mejor SEO.
+**Benefit**: Dynamic content, better SEO.
 
-**Diferencia con SSG**:
-- SSG: Genera 1 vez al hacer build
-- SSR: Genera en cada petición
+**Difference with SSG**:
+- SSG: Generates once at build time
+- SSR: Generates on each request
 
 ### Stack
-**Qué es**: Conjunto de tecnologías que usas en un proyecto.
+**What it is**: Set of technologies you use in a project.
 
-**Ejemplo de stack**:
+**Stack example**:
 - Frontend: Next.js + React + Tailwind
 - Backend: FastAPI + Python
 - Database: PostgreSQL
@@ -384,22 +384,22 @@ DELETE /api/posts/5   ← Borrar el post 5
 ## T
 
 ### TypeScript
-**Qué es**: JavaScript con "tipos". Te ayuda a prevenir errores.
+**What it is**: JavaScript with "types". Helps you prevent errors.
 
-**Sin tipos** (JavaScript):
+**Without types** (JavaScript):
 ```javascript
-function suma(a, b) {
+function sum(a, b) {
   return a + b
 }
-suma("5", 3)  // "53" ← WTF? 🤔
+sum("5", 3)  // "53" ← WTF? 🤔
 ```
 
-**Con tipos** (TypeScript):
+**With types** (TypeScript):
 ```typescript
-function suma(a: number, b: number): number {
+function sum(a: number, b: number): number {
   return a + b
 }
-suma("5", 3)  // ❌ ERROR! TypeScript te avisa
+sum("5", 3)  // ❌ ERROR! TypeScript warns you
 ```
 
 ---
@@ -407,45 +407,45 @@ suma("5", 3)  // ❌ ERROR! TypeScript te avisa
 ## V
 
 ### VS Code (Visual Studio Code)
-**Qué es**: Editor de código (donde escribes código).
+**What it is**: Code editor (where you write code).
 
-**Por qué este**: Es donde se integra Claude Code.
+**Why this one**: It's where Claude Code integrates.
 
 ### Vue
-**Qué es**: Framework de JavaScript para crear interfaces de usuario.
+**What it is**: JavaScript framework for creating user interfaces.
 
-**Alternativas**: React, Angular, Svelte
+**Alternatives**: React, Angular, Svelte
 
 ---
 
 ## W
 
 ### WebSocket
-**Qué es**: Tecnología para comunicación en tiempo real entre navegador y servidor.
+**What it is**: Technology for real-time communication between browser and server.
 
-**Diferencia con HTTP**:
-- HTTP: Pides datos → El servidor responde → Se cierra la conexión
-- WebSocket: Conexión siempre abierta → Datos fluyen en ambas direcciones
+**Difference with HTTP**:
+- HTTP: Request data → Server responds → Connection closes
+- WebSocket: Connection always open → Data flows in both directions
 
-**Uso**: Chat en tiempo real, notificaciones, juegos multiplayer
+**Use**: Real-time chat, notifications, multiplayer games
 
 ---
 
-## Atajos de Claude Code
+## Claude Code Shortcuts
 
-### Comandos Slash
+### Slash Commands
 
 ```bash
-/help     # Ver ayuda
-/plan     # Activar plan mode
-/clear    # Limpiar conversación
-/model    # Cambiar modelo
+/help     # Show help
+/plan     # Activate plan mode
+/clear    # Clear conversation
+/model    # Change model
 ```
 
-### Prompts Comunes
+### Common Prompts
 
 ```
-✅ "Create a [tipo] app with [features]"
+✅ "Create a [type] app with [features]"
 ✅ "Fix this error: [paste error]"
 ✅ "Add tests to this code"
 ✅ "Explain what this code does"
@@ -454,37 +454,37 @@ suma("5", 3)  // ❌ ERROR! TypeScript te avisa
 
 ---
 
-## 📚 Recursos para Seguir Aprendiendo
+## 📚 Resources for Continued Learning
 
-### Si eres COMPLETAMENTE nuevo en programación:
-1. [freeCodeCamp](https://www.freecodecamp.org/) - Gratis, muy bueno
-2. [The Odin Project](https://www.theodinproject.com/) - Gratis, full-stack
-3. [CS50](https://cs50.harvard.edu/) - Curso de Harvard, gratis
+### If you're COMPLETELY new to programming:
+1. [freeCodeCamp](https://www.freecodecamp.org/) - Free, very good
+2. [The Odin Project](https://www.theodinproject.com/) - Free, full-stack
+3. [CS50](https://cs50.harvard.edu/) - Harvard course, free
 
-### Si ya sabes programar pero eres nuevo en web dev:
-1. [MDN Web Docs](https://developer.mozilla.org/) - Referencia completa
-2. [JavaScript.info](https://javascript.info/) - JavaScript moderno
-3. [Next.js Learn](https://nextjs.org/learn) - Tutorial oficial de Next.js
+### If you already know programming but are new to web dev:
+1. [MDN Web Docs](https://developer.mozilla.org/) - Complete reference
+2. [JavaScript.info](https://javascript.info/) - Modern JavaScript
+3. [Next.js Learn](https://nextjs.org/learn) - Official Next.js tutorial
 
-### Para aprender Claude Code:
-1. **[Tutorial de 15 minutos](./TUTORIAL-15MIN.md)** ← Empieza aquí
-2. **[Instalación](./docs/01-installation.md)** - Setup completo
-3. **[Ejemplos](./examples/README.md)** - Proyectos reales
-
----
-
-## 🤔 ¿Todavía confundido?
-
-**No te preocupes**, es normal. La programación tiene MUCHOS términos.
-
-**Tip**: No necesitas aprenderlos todos de una vez. Ve paso a paso:
-
-1. Empieza con el [Tutorial de 15 minutos](./TUTORIAL-15MIN.md)
-2. Construye tu primer proyecto simple
-3. Los términos se irán aclarando con la práctica
-
-**¿Algún término que no está aquí?** [Abre un issue](https://github.com/rmn1978/claude-code-advanced-guide/issues) y lo añadimos.
+### To learn Claude Code:
+1. **[15-Minute Tutorial](./TUTORIAL-15MIN.md)** ← Start here
+2. **[Installation](./docs/01-installation.md)** - Complete setup
+3. **[Examples](./examples/README.md)** - Real projects
 
 ---
 
-[← Volver al README](./README.md)
+## 🤔 Still Confused?
+
+**Don't worry**, it's normal. Programming has LOTS of terms.
+
+**Tip**: You don't need to learn them all at once. Go step by step:
+
+1. Start with the [15-Minute Tutorial](./TUTORIAL-15MIN.md)
+2. Build your first simple project
+3. The terms will become clearer with practice
+
+**Is there a term missing?** [Open an issue](https://github.com/rmn1978/claude-code-advanced-guide/issues) and we'll add it.
+
+---
+
+[← Back to README](./README.md)

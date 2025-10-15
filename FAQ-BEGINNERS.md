@@ -1,276 +1,276 @@
-# ❓ FAQ para Principiantes - Claude Code
+# ❓ FAQ for Beginners - Claude Code
 
-Preguntas frecuentes de personas que están empezando con Claude Code.
-
----
-
-## 🤔 Preguntas Básicas
-
-### ¿Qué es Claude Code exactamente?
-
-**Respuesta simple**: Es un asistente de IA que vive dentro de VS Code y te ayuda a programar.
-
-**Más detalles**:
-- Puedes pedirle que escriba código
-- Puedes pedirle que explique código
-- Puedes pedirle que arregle errores
-- Puedes pedirle que cree apps completas
-
-**Diferencia con ChatGPT/Copilot**:
-- ChatGPT: Solo texto, sin acceso a tus archivos
-- Copilot: Auto-completado inteligente
-- **Claude Code**: Puede VER tus archivos, ESCRIBIR código, EJECUTAR comandos
+Frequently asked questions from people who are getting started with Claude Code.
 
 ---
 
-### ¿Necesito saber programar para usar Claude Code?
+## 🤔 Basic Questions
 
-**Respuesta honesta**: Sí, al menos lo básico.
+### What exactly is Claude Code?
 
-**Nivel mínimo recomendado**:
-- ✅ Sabes qué es una variable
-- ✅ Sabes qué es una función
-- ✅ Sabes usar la terminal básica (`cd`, `ls`)
-- ✅ Sabes qué es Git (aunque sea conceptualmente)
+**Simple answer**: It's an AI assistant that lives inside VS Code and helps you program.
 
-**Si NO sabes nada de programación**:
-1. Aprende lo básico primero: [freeCodeCamp](https://www.freecodecamp.org/)
-2. Luego vuelve y Claude Code será 10x más útil
+**More details**:
+- You can ask it to write code
+- You can ask it to explain code
+- You can ask it to fix errors
+- You can ask it to create complete apps
 
-**Si ya sabes programar pero en otro lenguaje**:
-¡Perfecto! Claude Code te ayudará a aprender nuevos lenguajes rápido.
-
----
-
-### ¿Cuánto cuesta?
-
-**La extensión de VS Code**: GRATIS
-
-**El uso de la API de Claude**: PAGO por uso
-
-**Precios (Abril 2024)**:
-- **Haiku** (rápido): ~$0.25 por cada 1M tokens de entrada
-- **Sonnet** (balanceado): ~$3 por cada 1M tokens de entrada
-- **Opus** (más potente): ~$15 por cada 1M tokens de entrada
-
-**¿Qué significa en dinero real?**
-
-Para un proyecto pequeño (crear una app simple):
-- **Costo típico**: $1-5 USD
-- **Proyecto mediano**: $10-30 USD
-- **Proyecto grande**: $50-100 USD
-
-**¿Es caro?**
-
-Comparado con contratar a alguien: NO
-- Desarrollador freelance: $30-100/hora
-- Claude Code: $1-5 para completar el mismo proyecto
-
-**Tip**: Empieza con el modelo `haiku` (más barato) para práctica.
+**Difference with ChatGPT/Copilot**:
+- ChatGPT: Text only, no access to your files
+- Copilot: Intelligent auto-completion
+- **Claude Code**: Can SEE your files, WRITE code, EXECUTE commands
 
 ---
 
-### ¿Funciona en Windows / Mac / Linux?
+### Do I need to know how to program to use Claude Code?
 
-**SÍ**, funciona en los 3 sistemas operativos.
+**Honest answer**: Yes, at least the basics.
 
-**Requisitos**:
-- **Windows**: Windows 10 o superior
-- **Mac**: macOS 10.15 o superior
-- **Linux**: Cualquier distribución moderna
+**Minimum recommended level**:
+- ✅ You know what a variable is
+- ✅ You know what a function is
+- ✅ You know how to use the basic terminal (`cd`, `ls`)
+- ✅ You know what Git is (even conceptually)
 
-**Lo único que necesitas**:
-- VS Code instalado
-- Node.js instalado (v18+)
-- Conexión a internet
+**If you DON'T know anything about programming**:
+1. Learn the basics first: [freeCodeCamp](https://www.freecodecamp.org/)
+2. Then come back and Claude Code will be 10x more useful
+
+**If you already know programming but in another language**:
+Perfect! Claude Code will help you learn new languages quickly.
 
 ---
 
-### ¿Puedo usarlo sin la terminal / línea de comandos?
+### How much does it cost?
 
-**Respuesta corta**: Técnicamente sí, pero te perderás mucho.
+**The VS Code extension**: FREE
 
-**Respuesta larga**:
-Claude Code necesita ejecutar comandos como:
+**Using the Claude API**: PAY per use
+
+**Pricing (April 2024)**:
+- **Haiku** (fast): ~$0.25 per 1M input tokens
+- **Sonnet** (balanced): ~$3 per 1M input tokens
+- **Opus** (most powerful): ~$15 per 1M input tokens
+
+**What does this mean in real money?**
+
+For a small project (creating a simple app):
+- **Typical cost**: $1-5 USD
+- **Medium project**: $10-30 USD
+- **Large project**: $50-100 USD
+
+**Is it expensive?**
+
+Compared to hiring someone: NO
+- Freelance developer: $30-100/hour
+- Claude Code: $1-5 to complete the same project
+
+**Tip**: Start with the `haiku` model (cheaper) for practice.
+
+---
+
+### Does it work on Windows / Mac / Linux?
+
+**YES**, it works on all 3 operating systems.
+
+**Requirements**:
+- **Windows**: Windows 10 or higher
+- **Mac**: macOS 10.15 or higher
+- **Linux**: Any modern distribution
+
+**All you need**:
+- VS Code installed
+- Node.js installed (v18+)
+- Internet connection
+
+---
+
+### Can I use it without the terminal / command line?
+
+**Short answer**: Technically yes, but you'll miss a lot.
+
+**Long answer**:
+Claude Code needs to execute commands like:
 ```bash
 npm install
 git commit
 python app.py
 ```
 
-Si no sabes usar la terminal, te recomiendo:
-1. Aprende lo básico de terminal (2-3 horas)
-2. Tutorial recomendado: [The Odin Project - Command Line](https://www.theodinproject.com/lessons/foundations-command-line-basics)
+If you don't know how to use the terminal, I recommend:
+1. Learn the terminal basics (2-3 hours)
+2. Recommended tutorial: [The Odin Project - Command Line](https://www.theodinproject.com/lessons/foundations-command-line-basics)
 
-**Comandos básicos que SÍ o SÍ necesitas saber**:
+**Basic commands you MUST know**:
 ```bash
-cd carpeta      # Entrar a una carpeta
-ls              # Ver archivos
-pwd             # Ver dónde estás
+cd folder      # Enter a folder
+ls             # View files
+pwd            # See where you are
 ```
 
 ---
 
-### ¿Reemplaza a un desarrollador?
+### Does it replace a developer?
 
-**NO**, no reemplaza a un desarrollador.
+**NO**, it doesn't replace a developer.
 
-**Lo que SÍ hace**:
-- ✅ Acelera el desarrollo 3-10x
-- ✅ Te ayuda a aprender más rápido
-- ✅ Escribe código repetitivo por ti
-- ✅ Te ayuda a debuggear
+**What it DOES do**:
+- ✅ Accelerates development 3-10x
+- ✅ Helps you learn faster
+- ✅ Writes repetitive code for you
+- ✅ Helps you debug
 
-**Lo que NO hace**:
-- ❌ No entiende el contexto de negocio (eso lo decides tú)
-- ❌ No toma decisiones de arquitectura complejas
-- ❌ No entiende requerimientos vagos
-- ❌ A veces comete errores (necesitas revisarlo)
+**What it DOESN'T do**:
+- ❌ Doesn't understand business context (you decide that)
+- ❌ Doesn't make complex architecture decisions
+- ❌ Doesn't understand vague requirements
+- ❌ Sometimes makes mistakes (you need to review it)
 
-**Analogía**: Es como tener un asistente muy competente, no un reemplazo.
-
----
-
-### ¿Claude Code aprende de mi código?
-
-**NO**, Claude Code NO aprende de tu código específico.
-
-**Qué significa**:
-- Tu código NO se usa para entrenar futuros modelos
-- Anthropic NO guarda tu código permanentemente
-- Tu código NO se comparte con otros usuarios
-
-**Privacidad**:
-- Según la política de Anthropic, tus datos NO se usan para entrenamiento
-- Las conversaciones se procesan pero NO se almacenan permanentemente
-
-**Recomendación para empresas**:
-- Lee la [Privacy Policy de Anthropic](https://www.anthropic.com/privacy)
-- Considera usar una API empresarial si manejas datos super sensibles
+**Analogy**: It's like having a very competent assistant, not a replacement.
 
 ---
 
-## 🚀 Empezando
+### Does Claude Code learn from my code?
 
-### ¿Por dónde empiezo?
+**NO**, Claude Code does NOT learn from your specific code.
 
-**Ruta recomendada (4-6 horas total)**:
+**What this means**:
+- Your code is NOT used to train future models
+- Anthropic does NOT store your code permanently
+- Your code is NOT shared with other users
 
-1. **[Instalación](./docs/01-installation.md)** (15 min)
-   - Instalar VS Code
-   - Instalar Claude Code
-   - Configurar API key
+**Privacy**:
+- According to Anthropic's policy, your data is NOT used for training
+- Conversations are processed but NOT stored permanently
 
-2. **[Tutorial de 15 minutos](./TUTORIAL-15MIN.md)** (15 min)
-   - Tu primera app "Hello World"
-   - Ver a Claude Code en acción
-
-3. **[Glosario](./GLOSSARY.md)** (30 min)
-   - Leer términos básicos
-   - No necesitas memorizarlos, solo familiarizarte
-
-4. **[Ejemplo: Todo API](./examples/todo-api-fastapi/README.md)** (1-2 horas)
-   - Construir tu primera API
-   - Paso a paso, muy claro
-
-5. **[Ejemplo: Blog](./examples/blog-nextjs/README.md)** (1-2 horas)
-   - Construir tu primer frontend
-   - Next.js básico
-
-6. **Practica creando tus propios proyectos**
-   - Empieza con ideas simples
-   - Itera y mejora
+**Recommendation for companies**:
+- Read [Anthropic's Privacy Policy](https://www.anthropic.com/privacy)
+- Consider using an enterprise API if handling super sensitive data
 
 ---
 
-### ¿Qué proyecto debería construir primero?
+## 🚀 Getting Started
 
-**Para aprender, proyectos simples son mejores:**
+### Where do I start?
 
-**Ideas de primer proyecto (1-2 horas)**:
-1. **Lista de Tareas (Todo App)**
-   - CRUD básico
-   - Sin autenticación
-   - Solo localStorage
+**Recommended path (4-6 hours total)**:
 
-2. **Conversor de Unidades**
+1. **[Installation](./docs/01-installation.md)** (15 min)
+   - Install VS Code
+   - Install Claude Code
+   - Configure API key
+
+2. **[15-Minute Tutorial](./TUTORIAL-15MIN.md)** (15 min)
+   - Your first "Hello World" app
+   - See Claude Code in action
+
+3. **[Glossary](./GLOSSARY.md)** (30 min)
+   - Read basic terms
+   - No need to memorize, just familiarize
+
+4. **[Example: Todo API](./examples/todo-api-fastapi/README.md)** (1-2 hours)
+   - Build your first API
+   - Step by step, very clear
+
+5. **[Example: Blog](./examples/blog-nextjs/README.md)** (1-2 hours)
+   - Build your first frontend
+   - Basic Next.js
+
+6. **Practice creating your own projects**
+   - Start with simple ideas
+   - Iterate and improve
+
+---
+
+### What project should I build first?
+
+**For learning, simple projects are better:**
+
+**First project ideas (1-2 hours)**:
+1. **Todo List (Todo App)**
+   - Basic CRUD
+   - No authentication
+   - Just localStorage
+
+2. **Unit Converter**
    - Celsius ↔ Fahrenheit
-   - Kilómetros ↔ Millas
-   - Solo frontend, sin backend
+   - Kilometers ↔ Miles
+   - Frontend only, no backend
 
-3. **Calculadora**
-   - Suma, resta, multiplicación, división
-   - Interfaz simple
+3. **Calculator**
+   - Addition, subtraction, multiplication, division
+   - Simple interface
 
-**Ideas de segundo proyecto (3-5 horas)**:
-1. **Blog Personal**
-   - SSG con Next.js
-   - Posts en Markdown
-   - Deploy a Vercel
+**Second project ideas (3-5 hours)**:
+1. **Personal Blog**
+   - SSG with Next.js
+   - Posts in Markdown
+   - Deploy to Vercel
 
-2. **API de Notas**
+2. **Notes API**
    - FastAPI + PostgreSQL
-   - CRUD completo
-   - Autenticación básica
+   - Complete CRUD
+   - Basic authentication
 
 3. **Pomodoro Timer**
    - React
-   - LocalStorage para estadísticas
+   - LocalStorage for statistics
 
-**NO empieces con**:
-- ❌ Red social completa
-- ❌ E-commerce con pagos
-- ❌ App de trading
-- ❌ Clon de Netflix
+**DON'T start with**:
+- ❌ Complete social network
+- ❌ E-commerce with payments
+- ❌ Trading app
+- ❌ Netflix clone
 
-(Estos son demasiado complejos para empezar)
-
----
-
-### ¿Cuánto tiempo me toma aprender?
-
-**Depende de tu nivel previo:**
-
-**Si ya sabes programar**:
-- Familiarizarte con Claude Code: 1-2 horas
-- Construir primer proyecto: 2-4 horas
-- Ser productivo: 1 semana
-- **Total**: ~1 semana
-
-**Si sabes programar pero en otro stack**:
-- Aprender el nuevo stack CON Claude Code: 1-2 semanas
-- Ser productivo: 2-3 semanas
-- **Total**: ~2-3 semanas
-
-**Si eres COMPLETAMENTE nuevo en programación**:
-- Aprender programación básica: 3-6 meses
-- Aprender Claude Code: 1-2 semanas
-- **Total**: 3-6 meses
-
-**Tip**: No tengas prisa. Aprende bien los fundamentos.
+(These are too complex to start with)
 
 ---
 
-## 💻 Problemas Técnicos
+### How long does it take to learn?
 
-### "API key not found" - ¿Qué hago?
+**Depends on your previous level:**
 
-**Paso 1**: Verifica que configuraste la API key
+**If you already know programming**:
+- Familiarize yourself with Claude Code: 1-2 hours
+- Build first project: 2-4 hours
+- Be productive: 1 week
+- **Total**: ~1 week
+
+**If you know programming but in another stack**:
+- Learn the new stack WITH Claude Code: 1-2 weeks
+- Be productive: 2-3 weeks
+- **Total**: ~2-3 weeks
+
+**If you're COMPLETELY new to programming**:
+- Learn basic programming: 3-6 months
+- Learn Claude Code: 1-2 weeks
+- **Total**: 3-6 months
+
+**Tip**: Don't rush. Learn the fundamentals well.
+
+---
+
+## 💻 Technical Problems
+
+### "API key not found" - What do I do?
+
+**Step 1**: Verify you configured the API key
 
 ```bash
-# En la terminal
+# In the terminal
 echo $ANTHROPIC_API_KEY  # Mac/Linux
 echo %ANTHROPIC_API_KEY%  # Windows
 ```
 
-**Si sale vacío**:
+**If it's empty**:
 
 **Mac/Linux**:
 ```bash
-# Añadir al archivo ~/.zshrc o ~/.bashrc
+# Add to ~/.zshrc or ~/.bashrc file
 export ANTHROPIC_API_KEY="sk-ant-xxxxx"
 
-# Recargar
+# Reload
 source ~/.zshrc
 ```
 
@@ -279,22 +279,22 @@ source ~/.zshrc
 $env:ANTHROPIC_API_KEY="sk-ant-xxxxx"
 ```
 
-**Paso 2**: Reinicia VS Code COMPLETAMENTE
+**Step 2**: Restart VS Code COMPLETELY
 
-**Más ayuda**: [Troubleshooting](./docs/07-troubleshooting.md#error-api-key-not-found)
+**More help**: [Troubleshooting](./docs/07-troubleshooting.md#error-api-key-not-found)
 
 ---
 
-### Claude Code es muy lento, ¿por qué?
+### Claude Code is very slow, why?
 
-**Causas comunes**:
+**Common causes**:
 
-1. **Modelo muy grande**
-   - Solución: Usa `haiku` en lugar de `sonnet` o `opus`
+1. **Model too large**
+   - Solution: Use `haiku` instead of `sonnet` or `opus`
    - Settings → Claude Code → Model → `claude-haiku-3.5`
 
-2. **Proyecto con muchos archivos**
-   - Solución: Crea `.claudeignore`
+2. **Project with many files**
+   - Solution: Create `.claudeignore`
    ```
    node_modules/
    .next/
@@ -302,206 +302,206 @@ $env:ANTHROPIC_API_KEY="sk-ant-xxxxx"
    build/
    ```
 
-3. **Tokens máximos muy altos**
-   - Solución: Reduce en settings
+3. **Max tokens too high**
+   - Solution: Reduce in settings
    ```json
    {
-     "claude-code.maxTokens": 4096  // En lugar de 8192
+     "claude-code.maxTokens": 4096  // Instead of 8192
    }
    ```
 
-4. **Conexión a internet lenta**
-   - No hay solución más que mejorar tu internet
+4. **Slow internet connection**
+   - No solution except improving your internet
 
 ---
 
-### ¿Por qué Claude Code no entiende mi prompt?
+### Why doesn't Claude Code understand my prompt?
 
-**Prompts malos vs buenos**:
+**Bad vs good prompts**:
 
-❌ **Malo**: "Crea una app"
-- Demasiado vago
+❌ **Bad**: "Create an app"
+- Too vague
 
-✅ **Bueno**: "Create a todo app with React that allows me to add, edit, and delete tasks"
-- Específico y claro
+✅ **Good**: "Create a todo app with React that allows me to add, edit, and delete tasks"
+- Specific and clear
 
-❌ **Malo**: "Arregla esto"
-- No dice qué está roto
+❌ **Bad**: "Fix this"
+- Doesn't say what's broken
 
-✅ **Bueno**: "I'm getting this error: [paste error]. Fix it in src/api/users.py"
-- Error específico + ubicación
+✅ **Good**: "I'm getting this error: [paste error]. Fix it in src/api/users.py"
+- Specific error + location
 
-**Tips para buenos prompts**:
-1. Se específico
-2. Menciona el archivo si es relevante
-3. Incluye el stack tecnológico
-4. Pega errores completos (con stack trace)
+**Tips for good prompts**:
+1. Be specific
+2. Mention the file if relevant
+3. Include the technology stack
+4. Paste complete errors (with stack trace)
 
 ---
 
-### Error: "Permission denied" al ejecutar comandos
+### Error: "Permission denied" when executing commands
 
-**Causa**: Falta permiso de ejecución
+**Cause**: Missing execution permission
 
-**Solución Mac/Linux**:
+**Solution Mac/Linux**:
 ```bash
-chmod +x nombre-del-script.sh
+chmod +x script-name.sh
 ```
 
-**Solución Windows**:
+**Solution Windows**:
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 ---
 
-## 🎓 Aprendizaje
+## 🎓 Learning
 
-### ¿Debo aprender el stack primero o usar Claude Code de una vez?
+### Should I learn the stack first or use Claude Code right away?
 
-**Recomendación**: Aprende lo básico del stack PRIMERO.
+**Recommendation**: Learn the stack basics FIRST.
 
-**Por qué**:
-- Si no entiendes lo básico, no sabrás si el código de Claude es bueno o malo
-- No podrás corregir errores
-- No entenderás lo que está haciendo
+**Why**:
+- If you don't understand the basics, you won't know if Claude's code is good or bad
+- You won't be able to fix errors
+- You won't understand what it's doing
 
-**Aprende primero**:
-- Sintaxis básica del lenguaje (JavaScript, Python, etc.)
-- Qué hace cada herramienta (React, FastAPI, etc.)
-- Conceptos fundamentales (variables, funciones, loops)
+**Learn first**:
+- Basic language syntax (JavaScript, Python, etc.)
+- What each tool does (React, FastAPI, etc.)
+- Fundamental concepts (variables, functions, loops)
 
-**Luego usa Claude Code para**:
-- Escribir código repetitivo
-- Aprender patrones avanzados
-- Acelerar el desarrollo
+**Then use Claude Code to**:
+- Write repetitive code
+- Learn advanced patterns
+- Accelerate development
 
-**Analogía**: No uses un auto de Fórmula 1 si aún no sabes manejar. Aprende a manejar primero.
-
----
-
-### ¿Puedo confiar en el código que genera Claude?
-
-**Respuesta corta**: Sí, PERO siempre revísalo.
-
-**Claude Code es muy bueno, pero NO es perfecto**:
-
-**Tasa de acierto estimada**:
-- Tareas simples: ~95% correcto
-- Tareas medias: ~85% correcto
-- Tareas complejas: ~70% correcto
-
-**SIEMPRE debes**:
-1. ✅ Leer el código que genera
-2. ✅ Entender qué hace
-3. ✅ Probarlo (ejecutar tests)
-4. ✅ Hacer ajustes si es necesario
-
-**Señales de que el código puede estar mal**:
-- Tiene TODOs o comentarios "// FIX THIS"
-- Usa patrones desactualizados
-- No sigue las best practices de seguridad
-- Tiene hardcoded credentials
+**Analogy**: Don't use a Formula 1 car if you still don't know how to drive. Learn to drive first.
 
 ---
 
-### ¿Qué hago si Claude genera código con bugs?
+### Can I trust the code Claude generates?
 
-**No te frustres, es normal**:
+**Short answer**: Yes, BUT always review it.
 
-1. **Descríbele el error**:
+**Claude Code is very good, but NOT perfect**:
+
+**Estimated success rate**:
+- Simple tasks: ~95% correct
+- Medium tasks: ~85% correct
+- Complex tasks: ~70% correct
+
+**You should ALWAYS**:
+1. ✅ Read the code it generates
+2. ✅ Understand what it does
+3. ✅ Test it (run tests)
+4. ✅ Make adjustments if necessary
+
+**Signs the code might be wrong**:
+- Has TODOs or comments "// FIX THIS"
+- Uses outdated patterns
+- Doesn't follow security best practices
+- Has hardcoded credentials
+
+---
+
+### What do I do if Claude generates code with bugs?
+
+**Don't get frustrated, it's normal**:
+
+1. **Describe the error**:
    ```
    > This code gives error: [paste error]
    > Fix it
    ```
 
-2. **Si persiste, sé más específico**:
+2. **If it persists, be more specific**:
    ```
    > The error is in line 45 of src/api/users.py
    > The function expects a string but receives a number
    > Fix the type mismatch
    ```
 
-3. **Si sigue sin funcionar**:
-   - Pídele que explique el código
-   - Google el error
-   - Pregunta en Stack Overflow
-   - Simplifica el problema
+3. **If it still doesn't work**:
+   - Ask it to explain the code
+   - Google the error
+   - Ask on Stack Overflow
+   - Simplify the problem
 
 ---
 
-## 📚 Recursos
+## 📚 Resources
 
-### ¿Dónde aprendo más?
+### Where can I learn more?
 
-**Documentación oficial**:
+**Official documentation**:
 - [Claude Code Docs](https://docs.claude.com/claude-code)
 - [Anthropic API Docs](https://docs.anthropic.com/)
 
-**En este repositorio**:
-- **[Tutorial 15 min](./TUTORIAL-15MIN.md)** ← Empieza aquí
-- **[Glosario](./GLOSSARY.md)** - Términos explicados
-- **[Cheat Sheet](./CHEATSHEET.md)** - Referencia rápida
-- **[Ejemplos](./examples/README.md)** - 14 proyectos completos
+**In this repository**:
+- **[15-min Tutorial](./TUTORIAL-15MIN.md)** ← Start here
+- **[Glossary](./GLOSSARY.md)** - Terms explained
+- **[Cheat Sheet](./CHEATSHEET.md)** - Quick reference
+- **[Examples](./examples/README.md)** - 14 complete projects
 
-**Para aprender programación**:
-- [freeCodeCamp](https://www.freecodecamp.org/) - Gratis
-- [The Odin Project](https://www.theodinproject.com/) - Gratis
-- [MDN Web Docs](https://developer.mozilla.org/) - Referencia
+**To learn programming**:
+- [freeCodeCamp](https://www.freecodecamp.org/) - Free
+- [The Odin Project](https://www.theodinproject.com/) - Free
+- [MDN Web Docs](https://developer.mozilla.org/) - Reference
 
 ---
 
-### ¿Hay comunidad / Discord / Forum?
+### Is there a community / Discord / Forum?
 
-**Oficial**:
+**Official**:
 - [Anthropic Discord](https://discord.gg/anthropic)
 - [GitHub Discussions](https://github.com/anthropics/claude-code/discussions)
 
-**Este repositorio**:
+**This repository**:
 - [GitHub Issues](https://github.com/rmn1978/claude-code-advanced-guide/issues)
 - [GitHub Discussions](https://github.com/rmn1978/claude-code-advanced-guide/discussions)
 
-**Redes sociales**:
+**Social media**:
 - Twitter: [@learntouseai](https://twitter.com/learntouseai)
 
 ---
 
-## 🎯 Próximos Pasos
+## 🎯 Next Steps
 
-**Si ACABAS de instalar Claude Code**:
-1. Ve al **[Tutorial de 15 minutos](./TUTORIAL-15MIN.md)**
-2. Construye tu primera app
-3. Regresa aquí cuando tengas dudas
+**If you JUST installed Claude Code**:
+1. Go to the **[15-Minute Tutorial](./TUTORIAL-15MIN.md)**
+2. Build your first app
+3. Come back here when you have questions
 
-**Si ya hiciste el tutorial**:
-1. Revisa el **[Cheat Sheet](./CHEATSHEET.md)**
-2. Elige un **[ejemplo](./examples/README.md)** de tu nivel
-3. Constrúyelo paso a paso
+**If you already did the tutorial**:
+1. Review the **[Cheat Sheet](./CHEATSHEET.md)**
+2. Choose an **[example](./examples/README.md)** at your level
+3. Build it step by step
 
-**Si ya construiste varios proyectos**:
-1. Lee **[Best Practices](./docs/06-best-practices.md)**
-2. Aprende **[Multi-Agent Orchestration](./docs/guides/02-intermediate/multi-agent-orchestration.md)**
-3. Construye algo más complejo
-
----
-
-## ❓ ¿Tu pregunta no está aquí?
-
-**Opciones**:
-
-1. **Revisa el [Troubleshooting](./docs/07-troubleshooting.md)**
-2. **Busca en [Issues existentes](https://github.com/rmn1978/claude-code-advanced-guide/issues)**
-3. **Abre un [nuevo issue](https://github.com/rmn1978/claude-code-advanced-guide/issues/new/choose)**
-
-**Incluye en tu pregunta**:
-- Sistema operativo
-- Versión de VS Code
-- Qué intentaste hacer
-- Qué error obtuviste
-- Screenshots si es posible
+**If you already built several projects**:
+1. Read **[Best Practices](./docs/06-best-practices.md)**
+2. Learn **[Multi-Agent Orchestration](./docs/guides/02-intermediate/multi-agent-orchestration.md)**
+3. Build something more complex
 
 ---
 
-**¡Suerte en tu viaje con Claude Code!** 🚀
+## ❓ Your Question Not Here?
 
-[← Volver al README](./README.md)
+**Options**:
+
+1. **Check [Troubleshooting](./docs/07-troubleshooting.md)**
+2. **Search in [existing Issues](https://github.com/rmn1978/claude-code-advanced-guide/issues)**
+3. **Open a [new issue](https://github.com/rmn1978/claude-code-advanced-guide/issues/new/choose)**
+
+**Include in your question**:
+- Operating system
+- VS Code version
+- What you tried to do
+- What error you got
+- Screenshots if possible
+
+---
+
+**Good luck on your journey with Claude Code!** 🚀
+
+[← Back to README](./README.md)

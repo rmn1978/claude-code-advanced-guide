@@ -1,393 +1,393 @@
-# 🚀 Guía Avanzada de Claude Code para Visual Studio Code
+# 🚀 Advanced Claude Code Guide for Visual Studio Code
 
-> Toolkit profesional completo para dominar Claude Code y construir aplicaciones reales con agentes especializados por stack
+> Complete professional toolkit to master Claude Code and build real applications with specialized stack agents
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude-Code-blue.svg)](https://claude.ai/code)
 [![VS Code](https://img.shields.io/badge/VS%20Code-Extension-blue.svg)](https://marketplace.visualstudio.com/items?itemName=anthropic.claude-code)
 [![Version](https://img.shields.io/badge/version-0.3-green.svg)](./WHATS_NEW.md)
 
-## 🌟 Lo Nuevo en v0.3 - THE ULTIMATE UPDATE 🔥
+## 🌟 What's New in v0.3 - THE ULTIMATE UPDATE 🔥
 
-### 🚀 NUEVOS EJEMPLOS ÉPICOS
-- 🤖 **AI Code Reviewer** - Analiza PRs automáticamente con Claude ($10k-50k MRR potential)
-- 🎬 **Video Streaming Platform** - Netflix clone completo ($100k-15M MRR potential)
-- 💬 **Real-Time Chat** - Socket.io + Redis para chat escalable
-- 🎨 **Landing Page Builder** - Editor drag & drop no-code ($20k-100k MRR potential)
+### 🚀 NEW EPIC EXAMPLES
+- 🤖 **AI Code Reviewer** - Automatically analyzes PRs with Claude ($10k-50k MRR potential)
+- 🎬 **Video Streaming Platform** - Complete Netflix clone ($100k-15M MRR potential)
+- 💬 **Real-Time Chat** - Socket.io + Redis for scalable chat
+- 🎨 **Landing Page Builder** - Drag & drop no-code editor ($20k-100k MRR potential)
 
-### 🤖 NUEVOS WORKFLOW AGENTS (6)
-- 🚀 **Deployment Specialist** - Deploy a Vercel, AWS, Railway
-- 🗄️ **Database Architect** - Diseño y optimización de BD
-- 🧪 **Testing Specialist** - Tests comprehensivos (Jest, Pytest, Playwright)
-- ⚡ **Performance Specialist** - Core Web Vitals y optimización
+### 🤖 NEW WORKFLOW AGENTS (6)
+- 🚀 **Deployment Specialist** - Deploy to Vercel, AWS, Railway
+- 🗄️ **Database Architect** - Database design and optimization
+- 🧪 **Testing Specialist** - Comprehensive tests (Jest, Pytest, Playwright)
+- ⚡ **Performance Specialist** - Core Web Vitals and optimization
 - 📊 **Monitoring Specialist** - Sentry, Datadog, Prometheus
 - 🔒 **Security Specialist** - Auth, OWASP Top 10, security headers
 
-### 📊 NÚMEROS INCREÍBLES
-- **10+ Ejemplos Production-Ready** (4 nuevos!)
-- **13 Agentes Especializados** (6 nuevos!)
-- **200,000+ líneas de código** (vs 35,000 antes)
-- **$135k - $15M MRR potential** en los ejemplos
+### 📊 INCREDIBLE NUMBERS
+- **10+ Production-Ready Examples** (4 new!)
+- **13 Specialized Agents** (6 new!)
+- **200,000+ lines of code** (vs 35,000 before)
+- **$135k - $15M MRR potential** in the examples
 
-### 🎯 NUEVO: SHOWCASE.md
-**Documento épico** que muestra el verdadero poder de Claude Code:
-- Casos de uso reales con revenue potential
-- Comparación: Traditional vs Claude Code (95% más rápido!)
-- Success stories proyectadas
-- Roadmap para cada tipo de developer
+### 🎯 NEW: SHOWCASE.md
+**Epic document** showcasing the true power of Claude Code:
+- Real use cases with revenue potential
+- Comparison: Traditional vs Claude Code (95% faster!)
+- Projected success stories
+- Roadmap for every type of developer
 
-**[🚀 VER EL SHOWCASE COMPLETO →](./SHOWCASE.md)**
+**[🚀 SEE THE COMPLETE SHOWCASE →](./SHOWCASE.md)**
 
-**[Ver cambios v0.2 →](./WHATS_NEW.md)**
+**[See v0.2 changes →](./WHATS_NEW.md)**
 
-## 📋 Tabla de Contenidos
+## 📋 Table of Contents
 
-- [Introducción](#-introducción)
-- [Configuración Rápida](#-configuración-rápida)
-- [Estructura del Repositorio](#-estructura-del-repositorio)
-- [Guías Detalladas](#-guías-detalladas)
-- [Ejemplos Prácticos](#-ejemplos-prácticos)
-- [Casos de Uso Avanzados](#-casos-de-uso-avanzados)
-- [Recursos Adicionales](#-recursos-adicionales)
+- [Introduction](#-introduction)
+- [Quick Setup](#-quick-setup)
+- [Repository Structure](#-repository-structure)
+- [Detailed Guides](#-detailed-guides)
+- [Practical Examples](#-practical-examples)
+- [Advanced Use Cases](#-advanced-use-cases)
+- [Additional Resources](#-additional-resources)
 
-## 🎯 Introducción
+## 🎯 Introduction
 
-Este repositorio es un **toolkit profesional completo** que transforma cómo construyes aplicaciones con Claude Code. No es solo documentación - es una colección de agentes production-ready, ejemplos completos, y herramientas prácticas.
+This repository is a **complete professional toolkit** that transforms how you build applications with Claude Code. It's not just documentation - it's a collection of production-ready agents, complete examples, and practical tools.
 
-### 🚀 Lo que puedes hacer con este toolkit:
+### 🚀 What you can do with this toolkit:
 
-- ✅ **Usar agentes especializados** - 8 agentes production-ready para Next.js, Nuxt, Django, FastAPI, Express y más
-- ✅ **Construir apps en horas** - 4 ejemplos completos que puedes seguir paso a paso
-- ✅ **Orquestar múltiples agentes** - Coordina equipos de agentes para proyectos complejos
-- ✅ **Generar agentes personalizados** - CLI interactivo crea agentes en 2 minutos
-- ✅ **Rastrear tu productividad** - Analytics local sin necesidad de backend
-- ✅ **Seguir best practices** - Cada agente incluye decision frameworks y checklists
+- ✅ **Use specialized agents** - 8 production-ready agents for Next.js, Nuxt, Django, FastAPI, Express and more
+- ✅ **Build apps in hours** - 4 complete examples you can follow step by step
+- ✅ **Orchestrate multiple agents** - Coordinate teams of agents for complex projects
+- ✅ **Generate custom agents** - Interactive CLI creates agents in 2 minutes
+- ✅ **Track your productivity** - Local analytics without needing a backend
+- ✅ **Follow best practices** - Each agent includes decision frameworks and checklists
 
-### 💡 ¿Para quién es este toolkit?
+### 💡 Who is this toolkit for?
 
-#### Para Principiantes
-- ✅ Aprende con 4 ejemplos completos (Básico → Intermedio → Avanzado)
-- ✅ Sigue guías paso a paso
-- ✅ Usa agentes que conocen las best practices
+#### For Beginners
+- ✅ Learn with 4 complete examples (Basic → Intermediate → Advanced)
+- ✅ Follow step-by-step guides
+- ✅ Use agents that know best practices
 
-**Tiempo para primera app**: 1-2 horas
+**Time to first app**: 1-2 hours
 
-#### Para Desarrolladores Intermedios
-- ✅ 5 stacks cubiertos con agentes expertos
-- ✅ Multi-agent orchestration para proyectos complejos
-- ✅ Decision frameworks para arquitectura
+#### For Intermediate Developers
+- ✅ 5 stacks covered with expert agents
+- ✅ Multi-agent orchestration for complex projects
+- ✅ Decision frameworks for architecture
 
-**Tiempo para app production-ready**: 4-6 horas
+**Time to production-ready app**: 4-6 hours
 
-#### Para Teams & Enterprise
-- ✅ Coordina múltiples agentes por dominio
-- ✅ Patrones para equipos distribuidos
-- ✅ Analytics y métricas
+#### For Teams & Enterprise
+- ✅ Coordinate multiple agents by domain
+- ✅ Patterns for distributed teams
+- ✅ Analytics and metrics
 
-**Reducción en tiempo de desarrollo**: 40-70%
+**Reduction in development time**: 40-70%
 
-## 🎓 ¿Eres Principiante? Empieza Aquí
+## 🎓 Are You a Beginner? Start Here
 
-**NUEVO**: Contenido especial para beginners
+**NEW**: Special content for beginners
 
-### 🚀 Quick Start (15 minutos)
-1. **[Tutorial de 15 Minutos](./TUTORIAL-15MIN.md)** ⭐ Crea tu primera app paso a paso
-2. **[Glosario](./GLOSSARY.md)** - Todos los términos explicados de forma simple
-3. **[FAQ para Beginners](./FAQ-BEGINNERS.md)** - Preguntas frecuentes respondidas
-4. **[Cheat Sheet](./CHEATSHEET.md)** - Comandos y prompts más usados
+### 🚀 Quick Start (15 minutes)
+1. **[15-Minute Tutorial](./TUTORIAL-15MIN.md)** ⭐ Create your first app step by step
+2. **[Glossary](./GLOSSARY.md)** - All terms explained simply
+3. **[Beginners FAQ](./FAQ-BEGINNERS.md)** - Frequently asked questions answered
+4. **[Cheat Sheet](./CHEATSHEET.md)** - Most used commands and prompts
 
-**Ruta recomendada**: Tutorial → Glosario → Tu primer proyecto → FAQ cuando tengas dudas
+**Recommended path**: Tutorial → Glossary → Your first project → FAQ when you have questions
 
 ---
 
-## ⚡ Configuración Rápida
+## ⚡ Quick Setup
 
-### Prerequisitos
+### Prerequisites
 
 ```bash
-# Verificar Node.js (v16+)
+# Verify Node.js (v16+)
 node --version
 
-# Verificar npm
+# Verify npm
 npm --version
 
-# Verificar VS Code
+# Verify VS Code
 code --version
 ```
 
-### Instalación en 3 pasos
+### Installation in 3 steps
 
 ```bash
-# 1. Instalar Claude Code CLI
+# 1. Install Claude Code CLI
 npm install -g @anthropic-ai/claude-code
 
-# 2. Autenticación
+# 2. Authentication
 export ANTHROPIC_API_KEY="sk-ant-xxxxx"
 
-# 3. Instalar extensión de VS Code
+# 3. Install VS Code extension
 code --install-extension anthropic.claude-code
 ```
 
-### Verificación
+### Verification
 
 ```bash
-# Iniciar Claude Code
+# Start Claude Code
 claude
 
-# En la sesión de Claude
+# In Claude session
 /help
-/ide    # Conectar con VS Code
+/ide    # Connect with VS Code
 ```
 
-## 📁 Estructura del Repositorio
+## 📁 Repository Structure
 
 ```
 claude-code-advanced-guide/
-├── README.md                                    # Este archivo
-├── QUICKSTART.md                                # Empieza en 10 minutos
+├── README.md                                    # This file
+├── QUICKSTART.md                                # Start in 10 minutes
 ├── WHATS_NEW.md                                 # Changelog v0.2
-├── PROJECT_SUMMARY_v0.2.md                      # Resumen completo
+├── PROJECT_SUMMARY_v0.2.md                      # Complete summary
 │
-├── 📚 docs/                                     # Documentación completa
-│   ├── 02-configuration.md                      # 90+ páginas de configuración
-│   ├── 03-agents.md                             # 100+ páginas sobre agentes
+├── 📚 docs/                                     # Complete documentation
+│   ├── 02-configuration.md                      # 90+ pages of configuration
+│   ├── 03-agents.md                             # 100+ pages about agents
 │   └── guides/
 │       └── 02-intermediate/
-│           └── multi-agent-orchestration.md     # ⭐ 50+ páginas de orquestación
+│           └── multi-agent-orchestration.md     # ⭐ 50+ pages of orchestration
 │
 ├── 🤖 agents/                                   # Agent Marketplace
-│   ├── README.md                                # Catálogo completo
+│   ├── README.md                                # Complete catalog
 │   ├── stacks/
 │   │   ├── react-next/
-│   │   │   └── nextjs-architect.md              # ⭐ 6,000 líneas
+│   │   │   └── nextjs-architect.md              # ⭐ 6,000 lines
 │   │   ├── vue-nuxt/
-│   │   │   └── nuxt-architect.md                # ⭐ 5,500 líneas
+│   │   │   └── nuxt-architect.md                # ⭐ 5,500 lines
 │   │   ├── python-django/
-│   │   │   └── django-architect.md              # ⭐ 5,800 líneas
+│   │   │   └── django-architect.md              # ⭐ 5,800 lines
 │   │   ├── python-fastapi/
-│   │   │   └── fastapi-architect.md             # ⭐ 6,500 líneas
+│   │   │   └── fastapi-architect.md             # ⭐ 6,500 lines
 │   │   └── node-express/
-│   │       └── express-architect.md             # ⭐ 6,000 líneas
+│   │       └── express-architect.md             # ⭐ 6,000 lines
 │   └── healthcare/
 │       └── medical-diagnostic.md
 │
-├── 💻 examples/                                 # Ejemplos Completos
-│   ├── README.md                                # Catálogo de 9 ejemplos
-│   ├── todo-api-fastapi/                        # ⭐ 1-2h (Básico)
-│   ├── blog-nextjs/                             # ⭐ 1-2h (Básico)
-│   ├── ecommerce-nextjs-fastapi/                # ⭐ 4-5h (Intermedio)
-│   ├── saas-dashboard/                          # ⭐ 5-6h (Intermedio)
-│   └── healthcare-ai/                           # En desarrollo
+├── 💻 examples/                                 # Complete Examples
+│   ├── README.md                                # Catalog of 9 examples
+│   ├── todo-api-fastapi/                        # ⭐ 1-2h (Basic)
+│   ├── blog-nextjs/                             # ⭐ 1-2h (Basic)
+│   ├── ecommerce-nextjs-fastapi/                # ⭐ 4-5h (Intermediate)
+│   ├── saas-dashboard/                          # ⭐ 5-6h (Intermediate)
+│   └── healthcare-ai/                           # In development
 │
 ├── 📋 templates/
 │   ├── agents/                                  # Code reviewer, test generator
-│   ├── CLAUDE.md                                # Template de project memory
-│   └── settings.json                            # Configuración base
+│   ├── CLAUDE.md                                # Project memory template
+│   └── settings.json                            # Base configuration
 │
 ├── 🛠️ scripts/                                 # CLI Toolkit
-│   ├── generate-agent.sh                        # ⭐ Generador interactivo
+│   ├── generate-agent.sh                        # ⭐ Interactive generator
 │   ├── analytics/
-│   │   └── analyze-usage.sh                     # ⭐ Analytics local
+│   │   └── analyze-usage.sh                     # ⭐ Local analytics
 │   └── setup.sh
 │
-└── resources/                                   # Recursos adicionales
-    └── (en desarrollo)
+└── resources/                                   # Additional resources
+    └── (in development)
 ```
 
-**Leyenda**:
-- ⭐ = Production-ready, listo para usar
-- 📚 = Documentación comprehensiva
-- 🤖 = Agentes especializados
-- 💻 = Ejemplos completos funcionales
-- 🛠️ = Herramientas CLI
+**Legend**:
+- ⭐ = Production-ready, ready to use
+- 📚 = Comprehensive documentation
+- 🤖 = Specialized agents
+- 💻 = Complete functional examples
+- 🛠️ = CLI tools
 
-## 📚 Guías Detalladas
+## 📚 Detailed Guides
 
-### 1. [Instalación y Configuración Inicial](docs/01-installation.md)
-- Instalación paso a paso
-- Configuración de autenticación
-- Integración con VS Code
-- Verificación del entorno
+### 1. [Installation and Initial Configuration](docs/01-installation.md)
+- Step-by-step installation
+- Authentication configuration
+- VS Code integration
+- Environment verification
 
-### 2. [Configuración Avanzada](docs/02-configuration.md)
-- Settings a nivel usuario vs proyecto
-- Gestión de herramientas permitidas
-- Optimización de performance
-- Configuración de modelos
+### 2. [Advanced Configuration](docs/02-configuration.md)
+- User vs project level settings
+- Allowed tools management
+- Performance optimization
+- Model configuration
 
-### 3. [Agentes Especializados](docs/03-agents.md)
-- Anatomía de un agente
-- Creación de agentes custom
-- Biblioteca de agentes útiles
-- Comunicación entre agentes
+### 3. [Specialized Agents](docs/03-agents.md)
+- Anatomy of an agent
+- Creating custom agents
+- Useful agent library
+- Communication between agents
 
 ### 4. [MCP Servers](docs/04-mcp-servers.md)
-- ¿Qué es MCP?
-- Configuración de servidores
-- MCPs populares (GitHub, PostgreSQL, Stripe, etc.)
-- Crear tu propio MCP server
+- What is MCP?
+- Server configuration
+- Popular MCPs (GitHub, PostgreSQL, Stripe, etc.)
+- Create your own MCP server
 
-### 5. [Workflows y Patrones](docs/05-workflows.md)
-- Workflows para diferentes tipos de proyectos
-- Plan Mode avanzado
-- Colaboración en equipo
-- CI/CD con Claude Code
+### 5. [Workflows and Patterns](docs/05-workflows.md)
+- Workflows for different project types
+- Advanced Plan Mode
+- Team collaboration
+- CI/CD with Claude Code
 
-### 6. [Mejores Prácticas](docs/06-best-practices.md)
-- Organización de archivos
-- Gestión de contexto
+### 6. [Best Practices](docs/06-best-practices.md)
+- File organization
+- Context management
 - Security considerations
 - Performance optimization
 
 ### 7. [Troubleshooting](docs/07-troubleshooting.md)
-- Problemas comunes y soluciones
-- Debugging avanzado
-- Logs y monitoreo
+- Common problems and solutions
+- Advanced debugging
+- Logs and monitoring
 - FAQ
 
-## 💡 Ejemplos Prácticos
+## 💡 Practical Examples
 
-### Aplicación de IA Médica
+### Medical AI Application
 
 ```bash
-# Agente especializado en diagnóstico
+# Specialized diagnostic agent
 .claude/agents/medical-diagnostic.md
 ```
 
-Incluye:
-- Análisis de síntomas
-- Búsqueda en bases médicas
-- Generación de reportes
-- Integración con FHIR
+Includes:
+- Symptom analysis
+- Medical database search
+- Report generation
+- FHIR integration
 
-[Ver ejemplo completo →](examples/healthcare-ai/)
+[See complete example →](examples/healthcare-ai/)
 
-### Analizador Financiero
+### Financial Analyzer
 
 ```bash
-# Agente para análisis de mercados
+# Agent for market analysis
 .claude/agents/financial-analyst.md
 ```
 
-Incluye:
-- Análisis de series temporales
-- Predicción de tendencias
+Includes:
+- Time series analysis
+- Trend prediction
 - Risk assessment
-- Integración con APIs financieras
+- Financial API integration
 
-[🚧 Próximamente]
+[🚧 Coming Soon]
 
-### Tutor Educativo Personalizado
+### Personalized Educational Tutor
 
 ```bash
-# Agente pedagógico adaptativo
+# Adaptive pedagogical agent
 .claude/agents/adaptive-tutor.md
 ```
 
-Incluye:
-- Evaluación de nivel
-- Generación de contenido didáctico
-- Seguimiento de progreso
-- Feedback personalizado
+Includes:
+- Level assessment
+- Educational content generation
+- Progress tracking
+- Personalized feedback
 
-[🚧 Próximamente]
+[🚧 Coming Soon]
 
-### Revisor de Código Avanzado
+### Advanced Code Reviewer
 
 ```bash
-# Agente de code review enterprise
+# Enterprise code review agent
 .claude/agents/code-reviewer-pro.md
 ```
 
-Incluye:
-- Análisis estático avanzado
-- Detección de vulnerabilidades
-- Sugerencias de performance
+Includes:
+- Advanced static analysis
+- Vulnerability detection
+- Performance suggestions
 - Compliance checks
 
-[Ver AI Code Reviewer →](examples/ai-code-reviewer/)
+[See AI Code Reviewer →](examples/ai-code-reviewer/)
 
-### Generador de APIs RESTful
+### RESTful API Generator
 
 ```bash
-# Agente para arquitectura de APIs
+# Agent for API architecture
 .claude/agents/api-architect.md
 ```
 
-Incluye:
-- Diseño de endpoints
-- Validación con OpenAPI
-- Generación de docs
-- Tests automáticos
+Includes:
+- Endpoint design
+- OpenAPI validation
+- Documentation generation
+- Automated tests
 
-[Ver API Gateway →](examples/api-gateway-express/)
+[See API Gateway →](examples/api-gateway-express/)
 
-### Asistente DevOps
+### DevOps Assistant
 
 ```bash
-# Agente para infraestructura y deployment
+# Agent for infrastructure and deployment
 .claude/agents/devops-engineer.md
 ```
 
-Incluye:
-- Configuración de CI/CD
-- Gestión de contenedores
-- Monitoreo y alertas
+Includes:
+- CI/CD configuration
+- Container management
+- Monitoring and alerts
 - Automation scripts
 
-[🚧 Próximamente - Ver agente Deployment Specialist →](agents/workflow/deployment-specialist.md)
+[🚧 Coming Soon - See Deployment Specialist agent →](agents/workflow/deployment-specialist.md)
 
-## 🎯 Casos de Uso Avanzados
+## 🎯 Advanced Use Cases
 
-### 1. Desarrollo de CRM Completo
+### 1. Complete CRM Development
 
-Arquitectura multi-agente para construir un CRM desde cero:
+Multi-agent architecture to build a CRM from scratch:
 
-- **Backend Architect**: Diseño de base de datos y APIs
-- **Frontend Developer**: Componentes React + TypeScript
-- **Test Engineer**: Suite de tests completa
-- **Security Auditor**: Análisis de vulnerabilidades
-- **DevOps Engineer**: Deployment y CI/CD
+- **Backend Architect**: Database and API design
+- **Frontend Developer**: React + TypeScript components
+- **Test Engineer**: Complete test suite
+- **Security Auditor**: Vulnerability analysis
+- **DevOps Engineer**: Deployment and CI/CD
 
-[🚧 Próximamente]
+[🚧 Coming Soon]
 
-### 2. Sistema de Machine Learning Pipeline
+### 2. Machine Learning Pipeline System
 
-Agentes especializados para ML:
+Specialized agents for ML:
 
-- **Data Engineer**: ETL y preparación de datos
-- **ML Architect**: Diseño de modelos
-- **Training Monitor**: Seguimiento de entrenamientos
-- **Model Validator**: Validación y testing
+- **Data Engineer**: ETL and data preparation
+- **ML Architect**: Model design
+- **Training Monitor**: Training tracking
+- **Model Validator**: Validation and testing
 - **Deployment Manager**: MLOps
 
-[🚧 Próximamente]
+[🚧 Coming Soon]
 
-### 3. Migración Legacy to Modern Stack
+### 3. Legacy to Modern Stack Migration
 
-Estrategia de migración asistida por IA:
+AI-assisted migration strategy:
 
-- **Legacy Analyzer**: Análisis de código antiguo
-- **Architecture Planner**: Diseño de nueva arquitectura
-- **Migration Engineer**: Conversión de código
-- **Test Validator**: Verificación de comportamiento
-- **Documentation Writer**: Actualización de docs
+- **Legacy Analyzer**: Old code analysis
+- **Architecture Planner**: New architecture design
+- **Migration Engineer**: Code conversion
+- **Test Validator**: Behavior verification
+- **Documentation Writer**: Documentation updates
 
-[🚧 Próximamente]
+[🚧 Coming Soon]
 
-## 🛠️ Scripts de Utilidad
+## 🛠️ Utility Scripts
 
-### Setup Automático
+### Automatic Setup
 
 ```bash
-# Setup completo de Claude Code en tu proyecto
+# Complete Claude Code setup in your project
 curl -sSL https://raw.githubusercontent.com/rmn1978/claude-code-advanced-guide/main/scripts/setup.sh | bash
 ```
 
-### Generador de Agentes
+### Agent Generator
 
 ```bash
-# Crear un nuevo agente interactivamente
+# Create a new agent interactively
 ./scripts/generate-agent.sh
 
 # Output:
@@ -398,10 +398,10 @@ curl -sSL https://raw.githubusercontent.com/rmn1978/claude-code-advanced-guide/m
 # ✅ Agent created at .claude/agents/data-scientist.md
 ```
 
-### Validador de Configuración
+### Configuration Validator
 
 ```bash
-# Verificar que tu configuración es correcta
+# Verify that your configuration is correct
 ./scripts/validate-config.sh
 
 # Output:
@@ -414,55 +414,55 @@ curl -sSL https://raw.githubusercontent.com/rmn1978/claude-code-advanced-guide/m
 # ✅ All checks passed!
 ```
 
-## 📖 Recursos Adicionales
+## 📖 Additional Resources
 
-### Documentación Oficial
+### Official Documentation
 
 - [Claude Code Documentation](https://docs.claude.com/claude-code)
 - [MCP Specification](https://spec.modelcontextprotocol.io/)
 - [Anthropic API Reference](https://docs.anthropic.com/)
 
-### Comunidad
+### Community
 
-- [Discord de Claude Code](https://discord.gg/claude)
+- [Claude Code Discord](https://discord.gg/claude)
 - [GitHub Discussions](https://github.com/anthropics/claude-code/discussions)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/claude-code)
 
-### Videos y Tutoriales
+### Videos and Tutorials
 
-- [Serie de YouTube: Claude Code Mastery](https://youtube.com/playlist)
+- [YouTube Series: Claude Code Mastery](https://youtube.com/playlist)
 - [Workshop: Building AI Apps with Claude](https://workshop-link.com)
 - [Webinar: Enterprise AI Development](https://webinar-link.com)
 
-### Blogs y Artículos
+### Blogs and Articles
 
 - [Best Practices for AI-Assisted Development](https://blog-link.com)
 - [Building Production-Ready AI Apps](https://blog-link.com)
 - [Security Considerations for AI Coding Assistants](https://blog-link.com)
 
-## 🤝 Contribuir
+## 🤝 Contributing
 
-¡Las contribuciones son bienvenidas! Por favor lee nuestra [guía de contribución](CONTRIBUTING.md).
+Contributions are welcome! Please read our [contribution guide](CONTRIBUTING.md).
 
-### Formas de contribuir
+### Ways to contribute
 
-- 🐛 Reportar bugs
-- 💡 Sugerir nuevos ejemplos
-- 📝 Mejorar documentación
-- 🔧 Agregar templates útiles
-- ⭐ Compartir tus configuraciones
+- 🐛 Report bugs
+- 💡 Suggest new examples
+- 📝 Improve documentation
+- 🔧 Add useful templates
+- ⭐ Share your configurations
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está bajo la licencia MIT - ver [LICENSE](LICENSE) para más detalles.
+This project is licensed under the MIT License - see [LICENSE](LICENSE) for more details.
 
-## 🙏 Agradecimientos
+## 🙏 Acknowledgments
 
-- Anthropic team por Claude Code
-- Comunidad de desarrolladores que contribuyen con ejemplos
-- Todos los que reportan issues y sugieren mejoras
+- Anthropic team for Claude Code
+- Developer community contributing examples
+- Everyone who reports issues and suggests improvements
 
-## 📞 Contacto
+## 📞 Contact
 
 - **Issues**: [GitHub Issues](https://github.com/rmn1978/claude-code-advanced-guide/issues)
 - **Discussions**: [GitHub Discussions](https://github.com/rmn1978/claude-code-advanced-guide/discussions)
@@ -471,5 +471,5 @@ Este proyecto está bajo la licencia MIT - ver [LICENSE](LICENSE) para más deta
 
 ---
 
-⭐ Si esta guía te resulta útil, considera darle una estrella en GitHub!
+⭐ If you find this guide useful, consider giving it a star on GitHub!
 
